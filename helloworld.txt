@@ -1,1 +1,1 @@
-hello one hello two
+new type in two
