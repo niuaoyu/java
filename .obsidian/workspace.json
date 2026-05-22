@@ -197,16 +197,17 @@
   "active": "fa98298dd85655d5",
   "lastOpenFiles": [
     ".git/index.lock",
+    ".git/objects/a2/42c5b98052ab3aae02bde8f8a6648d524d27c0",
+    ".git/objects/a2/tmp_obj_UaC3NK",
+    ".git/objects/a2",
+    ".git/objects/0f/ba54f6de2af6921ed033045db8c930bd999d9c",
+    ".git/objects/0f/tmp_obj_d5lGmv",
+    ".git/objects/0f",
+    ".git/objects/21/df4071b72d74e77574e05f555a6e7caef8d95a",
+    ".git/objects/21/tmp_obj_oFnp7I",
+    ".git/objects/21",
+    ".git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391",
     "未命名.md",
-    "AI.md",
-    ".git/logs/refs/remotes/origin/main",
-    ".git/logs/refs/remotes/origin/HEAD",
-    ".git/refs/remotes/origin/main",
-    ".git/refs/remotes/origin/HEAD",
-    ".git/logs/refs/remotes/origin",
-    ".git/logs/refs/heads/main",
-    ".git/refs/remotes/origin",
-    ".git/objects/94/3ea748c658ed11b4628bc08a5c8556363df029",
-    ".git/objects/pack/pack-c452486715d62f048e92500afd587d9fdf87115d.idx"
+    "AI.md"
   ]
 }
