@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "work/0.轮廓/AI配置.md",
+                "file": "work/3.git/git基本步骤.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AI配置"
+              "title": "git基本步骤"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "work/0.轮廓/AI配置.md",
+                "file": "work/3.git/git基本步骤.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "AI配置 的反向链接列表"
+              "title": "git基本步骤 的反向链接列表"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "work/0.轮廓/AI配置.md",
+                "file": "work/3.git/git基本步骤.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "AI配置 的出链列表"
+              "title": "git基本步骤 的出链列表"
             }
           },
           {
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "work/0.轮廓/AI配置.md",
+                "file": "work/3.git/git基本步骤.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "AI配置 的大纲"
+              "title": "git基本步骤 的大纲"
             }
           },
           {
@@ -211,8 +211,10 @@
   },
   "active": "cf182faee95ef94e",
   "lastOpenFiles": [
-    "work/0.轮廓/服务器检测.md",
     "work/0.轮廓/AI配置.md",
+    "work/3.git/git基本步骤.md",
+    "work/3.git",
+    "work/0.轮廓/服务器检测.md",
     "work/0.轮廓/电脑配置.md",
     "ReadMe.md",
     "未命名.base",
