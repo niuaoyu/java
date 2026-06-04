@@ -1760,7 +1760,7 @@ MVCC 靠 隐藏字段 , undo log 版本链 , read view 实现的。
 * 一致性-undo log + redo log
 * 隔离性-锁 + MVCC
 
-![images](images/readview.png )
+![images](readview.png )
 
 # 数据类型
 
