@@ -3,6 +3,7 @@
 
 写的.java文件通过JDK提供的环境 编译为.class文件，送到JRE当中的JVM 做解释执行字节码的操作
 
+---
 # 类加载器 = Java 里专门负责 “找到 .class 文件并读进内存” 
 
 - 写 `new Student()`  类加载器就去硬盘上找 `Student.class`
@@ -33,7 +34,7 @@ set classpath=.;D:\lib
 - ✅ 配了 `.` → 当前目录 + D:\lib 都找  
 - ❌ 不配 `.` → 只找 D:\lib，当前目录被忽略
 
-
+---
 # 1.javac编译命令怎么用？2.java执行怎么用?
 
 
