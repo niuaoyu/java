@@ -155,6 +155,6 @@ java -cp .;D:\classes Hello
 ---
 # public class vs class
 
-yi'ge'yuan'wen
+自我描述：一个源文件只能有一个public class（类名跟文件名一样），可以没有，可以有多个class，每个class编译成一个.class文件，每个class都可以有一个main方法，没有main方法的class编译后（javac B.java）不能用java B，报错。
 
 
