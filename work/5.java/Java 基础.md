@@ -1,3 +1,9 @@
+1. JDK JRE JVM 一句话解释清楚，画图，类比，深入浅出？
+2. 类加载器?
+3. 1.javac编译命令怎么用？2.java执行怎么用?
+4. public class vs class?
+
+
 
 # JDK JRE JVM 一句话解释清楚，画图，类比，深入浅出？
 
@@ -146,8 +152,9 @@ java -cp .;D:\classes Hello
 > **`javac 文件名.java` 编译出 `.class`**  
 > **`java 类名` 执行（不加后缀，大小写一致）**
 
+---
+# public class vs class
 
-
-
+yi'ge'yuan'wen
 
 
