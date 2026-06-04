@@ -45,22 +45,15 @@ git ls-remote origin
 # 或者看本地追踪的远端状态
 git ls-tree -r origin/main --name-only | grep -i python
 ```
-
 ---
-
 **然后找到正确路径：**
-
 ```bash
 # 查看git追踪了哪些文件（本地缓存）
 git ls-files | grep -i python
 ```
-
 这个命令会显示 git 实际追踪的路径，用这个路径来执行 rm --cached。
 
----
-
 **根据输出结果执行删除：**
-
 ```bash
 # 把上面查到的实际路径填进去，例如：
 git rm -r --cached "1.python/basic"
@@ -70,14 +63,8 @@ git add .
 git commit -m "remove 1.python/basic from tracking"
 git push
 ```
-
 ---
-
 **如果 git ls-files 没有输出**，说明这个文件夹从未被追踪到远端，不需要做任何操作，直接忽略即可。
-
-把 `git ls-files | grep -i python` 的输出发给我，我帮你确认。
-
-
 
 
 # 3.忽略任意层级下的名叫modules文件或目录
