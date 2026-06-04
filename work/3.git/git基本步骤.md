@@ -36,7 +36,46 @@ git push
 
 **核心点：** `--cached` 是只删远端不删本地的关键，不加 `--cached` 会把本地文件也删掉。
 
+## 2.1 当前目录/1.python/basic有这个文件夹，现在删除了，但是有一部分已经推到remote，如何rm -r --cache？也可能没推到，如何看远端cache？
+先确认远端实际有什么：
 
+```bash
+# 查看远端已有的文件列表
+git ls-remote origin
+# 或者看本地追踪的远端状态
+git ls-tree -r origin/main --name-only | grep -i python
+```
+
+---
+
+**然后找到正确路径：**
+
+```bash
+# 查看git追踪了哪些文件（本地缓存）
+git ls-files | grep -i python
+```
+
+这个命令会显示 git 实际追踪的路径，用这个路径来执行 rm --cached。
+
+---
+
+**根据输出结果执行删除：**
+
+```bash
+# 把上面查到的实际路径填进去，例如：
+git rm -r --cached "1.python/basic"
+
+# 然后提交
+git add .
+git commit -m "remove 1.python/basic from tracking"
+git push
+```
+
+---
+
+**如果 git ls-files 没有输出**，说明这个文件夹从未被追踪到远端，不需要做任何操作，直接忽略即可。
+
+把 `git ls-files | grep -i python` 的输出发给我，我帮你确认。
 
 
 
