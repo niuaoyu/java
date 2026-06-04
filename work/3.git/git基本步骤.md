@@ -35,3 +35,11 @@ git push
 ```
 
 **核心点：** `--cached` 是只删远端不删本地的关键，不加 `--cached` 会把本地文件也删掉。
+
+
+# 3.忽略任意层级下的名叫modules文件或目录
+1. 仓库根目录的.gitignore 添加 `**/modules/`，这是匹配所有的叫models的目录和文件
+2. 如果想要删的是目录不是文件，可以写成`**/modules/`
+3. 如果只想删除某个路径下的所有目录，写成，`src/**/modules`
+4. 如果想要删除除了某个src目录下的，其他所有的modules，可以写`**/modules`+`!/src/**/modules`
+5. 如果当前的modules已经被git追踪了（git add 或者git commit），仅仅加.gitignore是不够的，需要先从git索引移除（移除索引不会影响本地文件）`git rm -r --cached **/modules`，做完后执行 `git add .gitignore`
