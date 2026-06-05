@@ -1,7 +1,7 @@
 ## 1. 新环境下用 SSH 连接 GitHub
 
 没开启ssh 要先开 sudo apt install openssh-server
-检查是否开启 sudo systemctl status ssh
+检查是否开启 sudo systemctl status ssh,可以设置开机自启动 sudo syystemctl enable ssh
 
 ```bash
 # ① 生成 SSH key（已有则跳过）
