@@ -1,5 +1,7 @@
 ## 1. 新环境下用 SSH 连接 GitHub
 
+没开启ssh 要先开 sudo apt install openssh
+
 ```bash
 # ① 生成 SSH key（已有则跳过）
 ssh-keygen -t ed25519 -C "your_email@example.com"
