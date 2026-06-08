@@ -5,7 +5,7 @@
 
 ```bash
 # ① 生成 SSH key（已有则跳过）
-ssh-keygen -t ed25519 -C "your_email@example.com"
+ssh-keygen -t ed25519 -C "littlespark@gmail.com"
 
 # ② 查看公钥并复制
 cat ~/.ssh/id_ed25519.pub
