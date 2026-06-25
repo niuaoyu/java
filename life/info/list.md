@@ -16,7 +16,12 @@ https://my.feishu.cn/docx/VpP7d1nwuomPF5xHSrIcxrtUn8f
 https://my.feishu.cn/wiki/NLuOwKJLHiBGrok945McHQVMnXg
 
 
+## 3月
 
+
+
+不会写代码，用AI做了15个小程序，每月稳定收益2w+
+https://my.feishu.cn/wiki/EliBwKRLeiFx28kFViKcSH3ynQe
 
 
 
