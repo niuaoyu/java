@@ -16,8 +16,23 @@ https://my.feishu.cn/docx/VpP7d1nwuomPF5xHSrIcxrtUn8f
 https://my.feishu.cn/wiki/NLuOwKJLHiBGrok945McHQVMnXg
 
 
+
+
+
+
 # 2025
 
 
+## 9月
+
+想在小红书构建自己的生意，不知道如何定位，不知道怎么挖掘自己的优势，不知道如何将自己的优势、技能市场化
+https://my.feishu.cn/wiki/PdH1wLzVDi5Vlik6PGYcZJi8nRe
+
+
+
+
+
+
 ## 3月
+
 生意0-1闭环：https://my.feishu.cn/docx/VRWOd0D61ocEZPxc7CrcQjvUnab?PdWaR8=1
