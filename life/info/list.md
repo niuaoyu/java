@@ -8,6 +8,9 @@
 普通人如何找到适合自己的风口
 https://my.feishu.cn/docx/VpP7d1nwuomPF5xHSrIcxrtUn8f
 
+大四学生做公众号
+https://my.feishu.cn/wiki/NLuOwKJLHiBGrok945McHQVMnXg
+
 
 # 2025
 
