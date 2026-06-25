@@ -16,13 +16,17 @@ https://my.feishu.cn/docx/VpP7d1nwuomPF5xHSrIcxrtUn8f
 https://my.feishu.cn/wiki/NLuOwKJLHiBGrok945McHQVMnXg
 
 
-
-
 ## 4月
 
 
 搞钱先搞人：一份写给搞钱人的“人情世故”指南
 https://my.feishu.cn/docx/FGpVd8b92oQejQxNoBBcJ2O4nhf
+
+大学老师离职创业，到做了一个亿：一个普通人的四次认知升维
+[Docs](https://pqxei7kqvj2.feishu.cn/wiki/YtRkwlKqdiTOJikkxmdcKfHcnSh)
+
+
+
 
 ## 3月
 
