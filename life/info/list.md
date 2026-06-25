@@ -5,6 +5,9 @@
 ## 6月
 从需求出发，普通人如何切入『企业AI服务』：[https://my.feishu.cn/wiki/RPYkwoCwrit6FZkqcXUcR5kJnze]
 
+普通人如何找到适合自己的风口
+https://my.feishu.cn/docx/VpP7d1nwuomPF5xHSrIcxrtUn8f
+
 
 # 2025
 
