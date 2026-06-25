@@ -16,6 +16,14 @@ https://my.feishu.cn/docx/VpP7d1nwuomPF5xHSrIcxrtUn8f
 https://my.feishu.cn/wiki/NLuOwKJLHiBGrok945McHQVMnXg
 
 
+
+
+## 4月
+
+
+搞钱先搞人：一份写给搞钱人的“人情世故”指南
+
+
 ## 3月
 
 
