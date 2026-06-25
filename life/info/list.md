@@ -3,6 +3,10 @@
 
 # 2026
 ## 6月
+
+一文讲透新手做副业怎么选项目【港湾计划】
+https://shengcaiyoushu01.feishu.cn/wiki/DXA6wqY7ri7mCjkUuobciyNXnTg
+
 从需求出发，普通人如何切入『企业AI服务』：[https://my.feishu.cn/wiki/RPYkwoCwrit6FZkqcXUcR5kJnze]
 
 普通人如何找到适合自己的风口
