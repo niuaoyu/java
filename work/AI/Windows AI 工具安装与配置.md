@@ -357,6 +357,8 @@ codex
 
 # 九、安装和配置 Cherry Studio
 
+**遇到的所有问题都可以去官方网站找解决办法：https://docs.cherry-ai.com/**
+
 ## 9.1 安装
 
 从 Cherry Studio 官方网站或官方 GitHub Releases 下载 Windows 版本。
@@ -453,6 +455,22 @@ url：https://opencode.ai/zen
 > “免费模型”的名称、额度和可用性可能发生变化，应以 OpenCode 当时显示的可用模型及内部实际配置为准。
 
 启动后直接输入任务，例如：检查当前目录
+
+
+
+
+**要使用读取本地目录，必须安装MCP与此同时打开MCP**
+
+
+
+
+
+
+
+
+
+
+
 
 ## 10.3 使用优先级
 
