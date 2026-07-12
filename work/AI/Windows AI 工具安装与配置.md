@@ -433,37 +433,11 @@ API Key：sk-********************
 
 OpenCode 作为主线路全部出现问题时的最后保障。
 
-## 10.1 安装命令
-
-确认 Node.js 已安装后，在 PowerShell 中执行：
-
-```powershell
-npm install -g opencode-ai
-```
-
-验证安装：
-
-```powershell
-opencode --version
-```
-
-启动 OpenCode：
-
-```powershell
-opencode
-```
-
-如果安装命令因版本更新失效，应查看 OpenCode 官方安装说明：
-
-```text
-https://opencode.ai/docs/
-```
+api：sk-p682y9lOqzuiymrXEU2wA8BaUeCYqSIoH9tNUEPcolNbunnmxhcXrOBP2uXJXwV4
+url：
 
 
-
-
-
-## 10.2 使用说明
+## 使用说明
 
 当前内部可用配置提供免费的 DeepSeek V4 Flash，用于：
 
@@ -475,13 +449,6 @@ https://opencode.ai/docs/
 - 主线路故障时的临时工作。
 
 > “免费模型”的名称、额度和可用性可能发生变化，应以 OpenCode 当时显示的可用模型及内部实际配置为准。
-
-使用前进入需要处理的目录：
-
-```powershell
-cd "你的项目目录"
-opencode
-```
 
 启动后直接输入任务，例如：
 
