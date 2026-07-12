@@ -434,7 +434,9 @@ API Key：sk-********************
 OpenCode 作为主线路全部出现问题时的最后保障。
 
 api：sk-p682y9lOqzuiymrXEU2wA8BaUeCYqSIoH9tNUEPcolNbunnmxhcXrOBP2uXJXwV4
-url：
+url：https://opencode.ai/zen
+
+![[Pasted image 20260712102342.png]]
 
 
 ## 使用说明
