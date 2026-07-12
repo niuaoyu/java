@@ -462,7 +462,7 @@ url：https://opencode.ai/zen
 **要使用读取本地目录，必须安装MCP与此同时打开MCP**
 
 ![[Pasted image 20260712111519.png]]
-
+![[Pasted image 20260712112150.png]]
 
 在输入页面需要打开MCP
 ![[Pasted image 20260712111656.png]]
