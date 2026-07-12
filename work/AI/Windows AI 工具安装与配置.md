@@ -382,7 +382,7 @@ codex
 9. 保存配置。
 ![[Pasted image 20260712101302.png]]
 
-
+![[Pasted image 20260712101504.png]]
 
 示例：
 
@@ -458,6 +458,10 @@ opencode
 ```text
 https://opencode.ai/docs/
 ```
+
+
+
+
 
 ## 10.2 使用说明
 
