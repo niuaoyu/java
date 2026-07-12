@@ -1,6 +1,4 @@
 
-# Windows AI 工具安装与配置 SOP
-
 ## 一、文档目标
 
 本文档用于指导 Windows 用户安装和配置以下工具：
@@ -69,7 +67,7 @@
 ```text
 名称：鸡毛
 API URL：https://api.ark717.com
-API Key：联系管理员获取
+API Key：sk-XC3fRgJdXKjQKN9pqYE7nIvY51jmR0jEA8JgGQVKyUyfAJ5I
 模型健康检测：https://pool.ark717.com/
 ```
 
@@ -88,7 +86,7 @@ API Key：联系管理员获取
 ```text
 名称：不跑路
 API URL：https://runanytime.hxi.me/
-API Key：联系管理员获取
+API Key：sk-B31AekxrnEvszDX5TRZ2AwNPXq7fQjbcKsR6hTugQzEgkIdU
 模型健康检测：https://stat.hxi.me/status/ai
 ```
 
@@ -106,7 +104,7 @@ API Key：联系管理员获取
 ```text
 名称：HYB
 API URL：https://ai.hybgzs.com/
-API Key：联系管理员获取
+API Key：sk-doJc46tZw0qPeu5_gIxboYj0J4L2uHwVNJ_IR3cp3snX3xkx3NMurrl6V_c 
 模型健康检测：https://ai.hybgzs.com/panel/model_health
 ```
 
@@ -132,7 +130,7 @@ Cherry Studio 已连接，但无法正常对话；
 2. 在 Cherry Studio 中重新选择模型；
 3. 新建一个对话窗口；
 4. 输入实际问题进行测试；
-5. 如果仍然失败，打开终端运行 Claude Code 或 Codex；
+5. **如果仍然失败**，打开终端运行 Claude Code 或 Codex；
 6. 输入：
 
 ```text
@@ -147,8 +145,6 @@ Cherry Studio 已连接，但无法正常对话；
 - 也可以切换其他服务商供 Cherry Studio 使用。
 
 其他线路也可能出现“GUI 不可用但终端可用”或“终端不可用但 GUI 可用”的情况，因此需要分别测试，不能只根据一个客户端判断线路整体状态。
-
----
 
 # 四、推荐使用顺序
 
