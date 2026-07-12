@@ -377,9 +377,12 @@ codex
 ![[Pasted image 20260712100628.png]]
 6. 填入 URL；
 7. 填入管理员提供的 API Key；
-
+![[Pasted image 20260712101101.png]]
 8. 添加或选择对应模型；
 9. 保存配置。
+![[Pasted image 20260712101302.png]]
+
+
 
 示例：
 
