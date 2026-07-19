@@ -7,6 +7,7 @@ AGENTS.md / CLAUDE.md / GEMINI.md：这些文件的作用都类似：把“项�
 
 
 
+![[Pasted image 20260719102641.png]]
 
 什么是智能体？——能感知周围环境，并自主做出行动。
 
