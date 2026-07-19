@@ -25,6 +25,10 @@ https://github.com/ILoveBingLu/CipherTalk
 
 https://github.com/hicccc77/weflow-releases/releases/tag/v6.1.0
 
+[huohuoer/wechat-cli: A CLI tool to query your local WeChat data — chat history, contacts, sessions, favorites, and more. Designed for LLM integration.](https://github.com/huohuoer/wechat-cli)
+
+
+
 7. 健身的只是如何做一个基本的科普？（skill？还是mcp？如何读取一些专业的知识，然后给出专业的指导？能快速到及格分？）
 
 后续
