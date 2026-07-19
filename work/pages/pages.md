@@ -31,7 +31,7 @@ https://github.com/hicccc77/weflow-releases/releases/tag/v6.1.0
 
 
 
-7. 健身的只是如何做一个基本的科普？（skill？还是mcp？如何读取一些专业的知识，然后给出专业的指导？能快速到及格分？）
+7. 健身的只是如何做一个基本的科普？（skill？还是mcp？如何读取一些专业的知识，然后给出专业的指导？能快速到及格分？）拆书！
 
 后续
 1. deskflow修改，复制会有问题
