@@ -19,6 +19,12 @@ https://github.com/liangdabiao/resume-matcher-agent-cn
 4. ~~写一个，如何数据转发（不要下载软件，服务器一定下载不了）怎么样，在本地可视化传输文件。奥对xftp~~
 5. agent开发，以及发展到算法岗，怎么实现可行性路径（一句话，既然必走这条路，就干最牛逼的，别自己给自己设限）
 6. 制卡片，英语学习如何识别微信，现在可以豆包制卡
+[LifeArchiveProject/WeChatDataAnalysis: 微信4.x数据解密并生成年度总结，高仿微信，实时更新，导出聊天记录，朋友圈，收藏等大量便捷功能](https://github.com/LifeArchiveProject/WeChatDataAnalysis)
+
+https://github.com/ILoveBingLu/CipherTalk
+
+https://github.com/hicccc77/weflow-releases/releases/tag/v6.1.0
+
 7. 健身的只是如何做一个基本的科普？（skill？还是mcp？如何读取一些专业的知识，然后给出专业的指导？能快速到及格分？）
 
 后续
