@@ -10,3 +10,7 @@
 2. [Deep Agents 实战 — 从零构建生产级 AI Agent 的完整指南](https://datawhalechina.github.io/deepagents-in-action/)
 
 
+[Hello-Agents](https://hello-agents.datawhale.cc/#/./README)
+
+[Deep Agents 实战 — 从零构建生产级 AI Agent 的完整指南](https://datawhalechina.github.io/deepagents-in-action/)
+
