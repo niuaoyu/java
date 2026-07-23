@@ -15,3 +15,11 @@
 [Deep Agents 实战 — 从零构建生产级 AI Agent 的完整指南](https://datawhalechina.github.io/deepagents-in-action/)
 
 先安装个superpowers skill，然后把任务计划做出来，想快一点，就让它开多个子agent来一起执行，然后记得不要相互依赖
+
+用agent ，从一个模糊的需求/项目出发，从0到1的全过程。也就是从有一个粗略的想法到用ai 不断对话抓住实际核心需求与可实现可执行计划与最终项目落地。  
+不拘泥于一种模型agent，可以是多个agent共同协作或其他方式。帮助你从只有一个需求开始完成一个标准的中大项目。
+
+从Agent 认知校准, Agent Loop, Tool System, Context Engineering, Memory 与 RAG, Multi-Agent, Agent 与 Harness 进阶 —— 编排、观测与部署 Agent 与 Harness 进阶 —— 编排、观测与部署,基础出发
+
+
+
