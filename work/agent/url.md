@@ -14,3 +14,4 @@
 
 [Deep Agents 实战 — 从零构建生产级 AI Agent 的完整指南](https://datawhalechina.github.io/deepagents-in-action/)
 
+先安装个superpowers skill，然后把任务计划做出来，想快一点，就让它开多个子agent来一起执行，然后记得不要相互依赖
