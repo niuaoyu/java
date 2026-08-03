@@ -7,6 +7,7 @@
 
 
 
+[AI实习生（数据运营/工作流） - 加入影石创新科技股份有限公司](https://arashivision.jobs.feishu.cn/campus/position/7667837696232311059/detail?share_token=MzsxNzUzMzM5Nzk0NjU1OzczOTUxNDI1NDUzMTM0ODMwNTg7MDsxLzI)
 AI实习生（数据运营/工作流）
 
 深圳
@@ -25,12 +26,51 @@ AI实习生（数据运营/工作流）
 
 岗位要求： 1、对 AI、大模型、知识库有浓厚兴趣 2、有良好的信息整理、归纳总结能力 3、做事细致、有耐心，对数据质量有要求 4、熟悉 Excel、飞书、多维表格、Notion 等工具 5、有 ChatGPT、Claude、Gemini 等 AI 工具使用经验优先 6、有信息管理、设计、数字媒体等相关背景优先 
 
-加分项： 1、使用过 Dify、Coze等 AI 平台 2、有 Prompt Engineering 经验 3、有知识库建设经验 4、有数据分析能力 二、工作流方向 AI Workflow 实习生（AI Workflow & Automation Intern） 
+加分项： 1、使用过 Dify、Coze等 AI 平台 2、有 Prompt Engineering 经验 3、有知识库建设经验 4、有数据分析能力 
+
+二、工作流方向 AI Workflow 实习生（AI Workflow & Automation Intern） 
 
 岗位要求： 1、对 AI、大模型、Agent 有浓厚兴趣 2、有一定逻辑思维和问题分析能力 3、乐于学习新工具，喜欢探索 AI 新能力 4、熟悉至少一种 AI Workflow 平台（如 Dify、Coze等）优先 5、有 Python、JavaScript、JSON、API 基础优先 6、有 Git、Cursor 等工具使用经验优先 
 
 加分项： 1、做过 AI Agent 项目 2、使用过 MCP 或 Function Calling 3、有自动化流程搭建经验 4、有开源项目或 GitHub 作品
 
+
+
+[AI平台研发实习生 - 加入影石创新科技股份有限公司](https://arashivision.jobs.feishu.cn/campus/position/7658194353126787369/detail?share_token=MzsxNzUzMzM5Nzk0NjU1OzczOTUxNDI1NDUzMTM0ODMwNTg7MDsxLzI)
+AI平台研发实习生
+
+深圳
+
+校招
+
+实习
+
+职位描述
+
+1. 存储与权限运维：在导师指导下参与存储权限治理与日常运维，编写 Shell/Python 等脚本，落地可复用的管理方案与检查流程。 2. 平台对接与自动化：与第三方系统对接，串联其开放 API，参与制定或迭代自动化接入、同步与运维方案。 3. 推理场景接入：协助将推理服务、模型或任务流接入现有 AI/ML 平台，配合联调与文档沉淀。 4. 前后端协助开发：参与 AI 平台前端（页面与交互）或后端（接口与服务）的开发与维护。 5. 核心能力共建：参与机器学习平台核心模块的设计与实现，包括但不限于多租户资源管理、认证与鉴权链路的分析与优化。
+
+职位要求
+
+1. 本科及以上学历在读，计算机、软件工程等相关专业优先 2. 熟悉 Linux 常用操作与网络基础、理解 TCP/IP 基本概念（如连接、端口、DNS、HTTP/HTTPS） 3. 至少熟练掌握一门：Shell、Python、Golang 等，能独立完成简单脚本或小型服务开发。 4. 掌握 React 框架，具备基础的前端页面开发与维护能力 5. 学习能力强，能主动阅读官方文档与技术规范并落地到项目。 6. 积极主动，具备良好的沟通协作意识，能够主动发现问题、推动问题解决并及时反馈进展。 加分项 1. 熟悉 Kubernetes、Docker 等容器与编排技术。 2. 了解AI模型的训练及推理过程，如大模型或CNN等 3. 了解 分布式存储 或对象存储、权限模型、配额与多租户隔离等相关概念。
+
+
+
+[DataAgent全栈开发实习生 - 加入影石创新科技股份有限公司](https://arashivision.jobs.feishu.cn/campus/position/7655585206824421682/detail?share_token=MzsxNzUzMzM5Nzk0NjU1OzczOTUxNDI1NDUzMTM0ODMwNTg7MDsxLzI)
+DataAgent全栈开发实习生
+
+深圳
+
+校招
+
+实习
+
+职位描述
+
+1. 参与 ChatBI 报告中心、上下文管理、场景知识包、报告预览、版本管理、权限校验等模块开发； 2. 基于 Vue 完成中后台页面，包括列表、详情、表单、报告预览、文件 viewer、状态流转和接口联调； 3. 参与后端 API 开发或联调，包括报告元数据、资产文件、版本发布、权限校验、查询记录等模块； 4. 参与 SQL/数据模型设计，支持报表、指标、维度、权限范围等数据查询场景； 5. 和业务运营/数据BP协作，把 LLM/Agent 生成的报告、上下文、查询结果以可靠的产品形态交付。
+
+职位要求
+
+1. 本科及以上学历，计算机、软件工程、数据科学等相关专业； 2. 熟悉 React/Vue 之一，熟悉 JavaScript/TypeScript，能独立完成中后台页面开发； 3. 掌握至少一种后端语言或框架，如 Node.js、Python/FastAPI、Java/Spring Boot； 4. 熟悉 SQL 和关系型数据库基础，能理解 ER 图、表关系、索引、分页、事务； 5. 有较好的工程习惯，能使用 Git，能读写接口文档，能独立定位常见前后端联调问题； 6. 有BI/权限系统/文件预览/对象存储/LLM 应用/RAG/Agent 项目经验者优先。
 
 
 
