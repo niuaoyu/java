@@ -74,8 +74,22 @@ DataAgent全栈开发实习生
 
 
 
+[Devops实习生 - 加入影石创新科技股份有限公司](https://arashivision.jobs.feishu.cn/campus/position/7654474214686804278/detail?share_token=MzsxNzUzMzM5Nzk0NjU1OzczOTUxNDI1NDUzMTM0ODMwNTg7MDsxLzI)
+Devops实习生
 
+深圳
 
+校招
+
+实习
+
+职位描述
+
+职位描述 1、协助构建、部署和维护CI/CD流水线。 2、参与自动化脚本和工具的开发，以提高开发和运维效率。 3、协助监控和优化系统性能，确保系统稳定运行。 4、度量体系可视化开发。 5、协助排查和解决开发和集成环境中的各种问题。 6、编写和维护相关文档，确保团队知识共享
+
+职位要求
+
+职位要求 1、计算机科学、信息技术或相关专业本科或研究生在读。 2、了解Linux操作系统，熟悉常见命令。 3、了解一种或多种编程语言，如Python、Shell等。 4、熟悉版本控制系统，如Git。 5、具有快速学习新技术的能力和解决问题的能力。 6、具备良好的沟通能力和团队合作精神。 加分项： 了解Docker和Kubernetes等容器化技术。 对DevOps理念和实践有基本了解，如CI/CD、容器化、微服务等。 有前后端开发经验（Django Vue3） 27届同学优先,提供转正机会
 
 
 
