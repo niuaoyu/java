@@ -1,3 +1,7 @@
+[ai-boost/awesome-harness-engineering | zdoc.app](https://www.zdoc.app/zh/ai-boost/awesome-harness-engineering)
+
+
+
 零基础的先看菜鸟教程：[https://www.runoob.com/ai-agent/ai-agent-tutorial.html](https://www.runoob.com/ai-agent/ai-agent-tutorial.html)  
 然后再学hello-agent:GitHub - datawhalechina/hello-agents: 《从零开始构建智能体》——从零开始的智能体原理与实践教程 · GitHub  
 同时可以研究一下 nanobot 以及 pi agent,  
