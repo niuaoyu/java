@@ -7,7 +7,7 @@
 
 商汤科技 https://hr-jobs.sensetime.com/edu/position/7667882724774496548/detail
 
-
+京东：[京东校招](https://campus.jd.com/#/jobs?to=present&type=present)
 
 
 
