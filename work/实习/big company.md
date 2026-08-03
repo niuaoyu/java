@@ -10,7 +10,7 @@
 京东：[京东校招](https://campus.jd.com/#/jobs?to=present&type=present)
 
 百度：[百度校园招聘](https://talent.baidu.com/jobs/detail/INTERN/9a8dca22-cdc4-4df9-99b6-58b2033b434b)
-
+拼多多：[拼多多集团-PDD校园招聘官网](https://careers.pddglobalhr.com/campus/grad/detail?positionId=efb51bb9-c947-4b8d-b3dd-118a171f3b81)
 
 [AI实习生（数据运营/工作流） - 加入影石创新科技股份有限公司](https://arashivision.jobs.feishu.cn/campus/position/7667837696232311059/detail?share_token=MzsxNzUzMzM5Nzk0NjU1OzczOTUxNDI1NDUzMTM0ODMwNTg7MDsxLzI)
 AI实习生（数据运营/工作流）
