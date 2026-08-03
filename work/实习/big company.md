@@ -5,6 +5,9 @@
 
 [官网 | 科大讯飞招聘](https://iflytek.zhiye.com/campus/jobs)
 
+商汤科技 https://hr-jobs.sensetime.com/edu/position/7667882724774496548/detail
+
+
 
 
 
