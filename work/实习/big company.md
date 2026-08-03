@@ -3,6 +3,7 @@
 
 先临三维：https://shining3d.zhiye.com/intern
 
+[官网 | 科大讯飞招聘](https://iflytek.zhiye.com/campus/jobs)
 
 
 
