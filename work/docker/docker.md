@@ -18,4 +18,10 @@ docker-compose.yml：输入镜像，然后启动所有镜像，不负责做菜�
 **Dockerfile 解决“怎么做一个容器”**，**docker-compose.yml 解决“怎么把多个容器串起来一起跑”**
 
 
+端口映射
 
+docker run --name mysql-niu -p 9999:3306 ，这句话-p 9999:3306 就是端口映射
+任何访问mysql容器的请求都需要通过9999这个端口才能找到mysql容器
+但如果内部容器访问mysql容器，就直接localhost:3306即可
+
+简单理解：端口映射是，小区:房间号，外卖人员想找
