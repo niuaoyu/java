@@ -13,6 +13,7 @@ docker守护进程是执行操作的——工人
 docker客户端只负责发指令——老板
 
 
+dockerfile：输入代码和环境，打包得到一个镜像
 **Dockerfile 解决“怎么做一个容器”**，**docker-compose.yml 解决“怎么把多个容器串起来一起跑”**
 
 
