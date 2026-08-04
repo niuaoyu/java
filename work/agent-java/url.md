@@ -1,5 +1,7 @@
 [ai-boost/awesome-harness-engineering | zdoc.app](https://www.zdoc.app/zh/ai-boost/awesome-harness-engineering)
 
+[deusyu/harness-engineering: Harness Engineering 学习指南 — 从概念理解到独立实践的深度学习档案](https://github.com/deusyu/harness-engineering)
+
 
 
 零基础的先看菜鸟教程：[https://www.runoob.com/ai-agent/ai-agent-tutorial.html](https://www.runoob.com/ai-agent/ai-agent-tutorial.html)  
