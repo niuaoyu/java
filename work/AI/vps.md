@@ -12,7 +12,7 @@
 
 下载x-ui
 
-在国内访问不了github，尽管开梯子了，但是在terminal看不了，还是要在当前会话加上
+在国内访问不了github，尽管开梯子了，但是在terminal看不了，还是要在当前会话加上这两句胡
 export http_proxy="http://127.0.0.1:7897"
 export https_proxy="http://127.0.0.1:7897"
 
