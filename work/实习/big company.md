@@ -1,6 +1,8 @@
 
 摩尔线程：[实习生职位](https://mthreads.zhiye.com/intern/jobs)
 
+阿里：  https://campus-talent.alibaba.com/campus/position/199908340002?deptCodes=
+
 先临三维：https://shining3d.zhiye.com/intern
 
 [官网 | 科大讯飞招聘](https://iflytek.zhiye.com/campus/jobs)
