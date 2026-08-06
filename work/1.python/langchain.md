@@ -19,7 +19,5 @@
 | **出了Bug好查** | LangSmith 提供可视化调试，每一步调用、每一次工具执行都能追踪               |
 
 
-LangChain（基础零件） 组装好后 变成 LangGraph（流程控制）  ← 加上状态管理
-    ↓ 封装
-Deep Agents（开箱即用的成品）
-
+LangChain（基础零件） 组装好后 变成 LangGraph（流程控制）  然后加上状态管理 再封装就变成 Deep Agents（开箱即用的成品）
+零件——流水线——机器人之间的区别，零件组装成一个liu'shui
