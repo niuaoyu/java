@@ -19,5 +19,7 @@
 | **出了Bug好查** | LangSmith 提供可视化调试，每一步调用、每一次工具执行都能追踪               |
 
 
-
+LangChain（基础零件） 组装好后 变成 LangGraph（流程控制）  ← 加上状态管理
+    ↓ 封装
+Deep Agents（开箱即用的成品）
 
