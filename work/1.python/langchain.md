@@ -19,7 +19,5 @@
 | **出了Bug好查** | LangSmith 提供可视化调试，每一步调用、每一次工具执行都能追踪               |
 
 LangGraph 是引擎，LangChain 是零件+轻组装，跑在引擎（LangGraph ）上；Deep Agents 是在此（LangChain）之上再装好常用模块的成品，是纵向叠加依赖。
-LangChain（基础零件） 通过 LangGraph（流程控制）变成一个个可用的零件  然后加上状态管理 再封装就变成 Deep Agents（开箱即用的成品）
-零件——流水线——机器人之间的区别，零件组装成一个流水线只能解决一个小问题，但多条流水线配合起来，就能变成一个机器人，能解决大部分问题
-
+LangChain 零件放到 LangGraph 引擎（自带流程控制+状态管理）上运行 → 再叠加规划/文件系统/子代理等预制模块 → 封装成 Deep Agents。
 
