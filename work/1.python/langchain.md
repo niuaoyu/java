@@ -21,3 +21,26 @@
 LangGraph 是引擎，LangChain 是零件+轻组装，跑在引擎（LangGraph ）上；Deep Agents 是在此（LangChain）之上再装好常用模块的成品，是纵向叠加依赖。
 LangChain 零件放到 LangGraph 引擎（自带流程控制+状态管理）上运行 → 再叠加规划/文件系统/子代理等预制模块 → 封装成 Deep Agents。
 
+### 第一部分：基础篇
+
+| 章节 | 内容 | 核心概念 |
+|------|------|----------|
+| **Model I/O** | 如何调用各种大模型 | Models, Messages, Prompts |
+| **Output Parsers** | 解析和验证模型输出 | StrOutputParser, JsonOutputParser |
+| **Prompts** | 提示词工程 | PromptTemplate, ChatPromptTemplate |
+
+### 第二部分：进阶篇
+
+| 章节         | 内容           | 核心概念                                    |
+| ---------- | ------------ | --------------------------------------- |
+| **Chains** | 组合多个组件形成完整流程 | LCEL（LangChain Expression Language）     |
+| **Memory** | 为对话添加记忆      | ConversationBufferMemory, SummaryMemory |
+| **Tools**  | 扩展模型能力       | 自定义工具、内置工具                              |
+
+### 第三部分：高级篇
+
+| 章节 | 内容 | 核心概念 |
+|------|------|----------|
+| **RAG** | 检索增强生成 | VectorStore, Retriever, DocumentLoader |
+| **Agents** | 构建智能代理 | ReAct, Tool Calling, AgentExecutor |
+| **LangGraph** | 复杂工作流编排 | StateGraph, 条件边 |
