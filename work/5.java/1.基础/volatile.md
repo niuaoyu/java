@@ -5,8 +5,6 @@
 ```java
 private volatile boolean running = true;
 ```
-
-
 ### 1. 保证可见性
 
 一个线程修改了 `volatile` 变量，其他线程能**立即看到最新值**，不会一直使用自己线程缓存中的旧值。
