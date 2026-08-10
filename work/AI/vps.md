@@ -39,4 +39,7 @@ curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh | su
 
 # 部署安全
 
-1.开启白名单，防止被扫到：https://linux.do/t/topic/2575515
+1. 开启白名单，防止被扫到：https://linux.do/t/topic/2575515
+2. 分成多ip：3Xui - 路由分流  [用自己的VPS自建的机场，如何实现多IP的分布。 - 开发调优 - LINUX DO](https://linux.do/t/topic/2611701)
+3. 
+
