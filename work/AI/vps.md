@@ -2,7 +2,10 @@
 
 开了2台，1台装上了Hindsight给Claude、Codex和Hermes加上记忆，另一台dd之后装了new-api做中转。我自己有一台LA的小鸡，都是用上面的Hermes通过密钥管理Bohrium这两台小鸡。
 
+# 不懂
 
+1. 600 / 年找拼车可以把常用的地区都覆盖了吧，再买个 nat 家宽拉落地
+2. 
 
 # 视频教程
 
