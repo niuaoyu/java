@@ -33,3 +33,10 @@ export http_proxy="http://127.0.0.1:7897"
 export https_proxy="http://127.0.0.1:7897"
 
 curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh | sudo -E bash
+
+
+
+
+# 部署安全
+
+1.开启白名单，防止被扫到：https://linux.do/t/topic/2575515
