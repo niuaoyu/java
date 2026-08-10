@@ -11,6 +11,18 @@
 
 # 前置检查
 
+
+## ip 检测
+
+[IP地址信息和纯净度检测 | IPPure](https://ippure.com/)
+[IP Geolocation API | 20B+ Requests Served - ipdata](https://ipdata.co/)
+https://ping0.ipyard.com/
+
+
+
+
+
+
 ### 普通 VPS 的 IP 可能被 GFW 针对 TCP 流量
 
 ping 通了不代表 TCP 没被封。
