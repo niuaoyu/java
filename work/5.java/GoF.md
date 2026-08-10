@@ -3,7 +3,38 @@ _Gang of Four（四人帮）_，经典书籍《Design Patterns: Elements of Reus
 
 # 创建型五种
 
+## 单例模式Singleton
 
+保证一个类只有一个实例，并提供全局访问点。比如，缓存，日志
+
+``` java
+class Singleton {
+
+    private static Singleton instance;
+
+    private Singleton() {}
+
+    public static Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton();
+        }
+        return instance;
+    }
+}
+```
+加载类的时候，j
+
+
+## 工厂方法模式
+
+
+## 抽象工厂模式
+
+
+## 建造者模式
+
+
+## 原型模式
 
 
 
