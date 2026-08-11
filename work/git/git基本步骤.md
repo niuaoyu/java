@@ -1,3 +1,7 @@
+
+[(4 条消息) 一个有趣的 Git 练习网站 - 知乎](https://zhuanlan.zhihu.com/p/383960650)
+
+
 ## 1. 新环境下用 SSH 连接 GitHub
 
 没开启ssh 要先开 sudo apt install openssh-server
