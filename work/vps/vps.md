@@ -46,7 +46,7 @@ QQPW，买出口 IP
 
 # 视频教程
 
-油管上也有不良林的，vless+reality 感觉很稳
+油管上也有不良林的（[(5) 不良林 - YouTube](https://www.youtube.com/@bulianglin)），vless+reality 感觉很稳
 
 
 # 前置检查
