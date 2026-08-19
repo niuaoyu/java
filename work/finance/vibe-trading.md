@@ -255,6 +255,79 @@ Vibe-Trading/
 │   └── tests/                      # 测试
 ├── frontend/                       # React 19 前端
 ├── wiki/                           # 文档
+
+
+```
+agent/
+├── api_server.py          # 入口1: FastAPI (≈400行)
+├── cli/main.py            # 入口2: CLI TUI
+├── mcp_server.py          # 入口3: MCP 服务器
+│
+├── src/
+│   ├── api/               # API 路由 + 安全 + 状态管理
+│   │   ├── routes.py
+│   │   ├── security.py
+│   │   └── state.py       # 全局状态（session_service 等）
+│   │
+│   ├── session/
+│   │   ├── service.py     # SessionService (≈600行) ★
+│   │   ├── store.py       # 会话持久化存储
+│   │   ├── models.py      # Session/Attempt/Message 模型
+│   │   └── events.py      # SSE 事件总线
+│   │
+│   ├── agent/
+│   │   ├── loop.py        # AgentLoop ReAct 主循环 (≈2500行) ★★★
+│   │   ├── context.py     # ContextBuilder 上下文组装 (≈430行) ★
+│   │   ├── tools.py       # ToolRegistry 工具注册表
+│   │   ├── skills.py      # SkillsLoader 技能加载
+│   │   ├── memory.py      # WorkspaceMemory 运行内存
+│   │   ├── grounding.py   # 数据"落地"层
+│   │   └── frontmatter.py # YAML 元数据解析器
+│   │
+│   ├── swarm/
+│   │   ├── models.py      # DAG 数据模型
+│   │   ├── runtime.py     # DAG 运行时引擎 ★★
+│   │   ├── worker.py      # 单个 Agent worker 执行
+│   │   └── presets/       # 29 个预设 YAML ★
+│   │
+│   ├── tools/             # 74 个工具 ★
+│   │   ├── backtest_tool.py
+│   │   ├── swarm_tool.py
+│   │   ├── market_data_tool.py
+│   │   ├── load_skill_tool.py
+│   │   └── ... (每个文件一个工具)
+│   │
+│   ├── skills/            # 74 个金融技能 (SKILL.md)
+│   │
+│   ├── providers/
+│   │   ├── llm.py         # ChatLLM 抽象层
+│   │   ├── chat.py        # LLM 调用实现
+│   │   └── capabilities.py
+│   │
+│   ├── memory/
+│   │   └── persistent.py  # 持久化内存
+│   │
+│   └── quantlib/          # 量化计算库 (265 函数)
+│
+├── backtest/
+│   ├── engines/           # 7 个回测引擎 ★★
+│   │   ├── base.py        # BaseEngine
+│   │   ├── china_a.py     # A股引擎
+│   │   ├── global_equity.py
+│   │   ├── crypto.py
+│   │   └── ...
+│   ├── loaders/           # 20+ 数据加载器 ★
+│   │   ├── base.py        # DataLoader Protocol
+│   │   ├── registry.py    # LoaderRegistry + 自动降级
+│   │   ├── tushare.py
+│   │   ├── yfinance_loader.py
+│   │   └── ...
+│   ├── runner.py          # 回测运行器
+│   ├── metrics.py         # 绩效指标
+│   └── validation.py      # 蒙特卡洛/WalkForward
+```
+
+
 ```
 
 **组织方式的优点：**
