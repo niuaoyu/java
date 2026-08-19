@@ -308,6 +308,11 @@ agent/
 │   ├── memory/
 │   │   └── persistent.py  # 持久化内存
 │   │
+│   ├── trading/           # 交易连接器
+│   ├── live/              # 实盘交易相关
+│   ├── governance/        # 模型风控
+│   ├── goal/              # 交易目标管理
+│   ├── strategy_discovery/# 策略发现
 │   └── quantlib/          # 量化计算库 (265 函数)
 │
 ├── backtest/
@@ -326,7 +331,8 @@ agent/
 │   ├── runner.py          # 回测运行器
 │   ├── metrics.py         # 绩效指标
 │   └── validation.py      # 蒙特卡洛/WalkForward
-
+frontend/                       # React 19 前端
+wiki/                           # 文档
 ```
 
 **组织方式的优点：**
