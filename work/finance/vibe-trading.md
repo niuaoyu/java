@@ -162,7 +162,7 @@ AgentLoop 是整个系统的"大脑"——它决定什么时候调用什么工�
 ## 交互层 presentation
 
 web（react19）、CLI（richTUI）、MCP（Stdio）、Rest API（FastAPI）
-这几个都是前端可以用的东西，可以浏览器web，也可以命令行cli，也可以ai直接调用mcp，这个rest api 好像是说前后端通信的规则！不像是一个输入框
+这几个都是前端可以用的东西，可以浏览器web，也可以命令行cli，也可以ai直接调用mcp，这个rest api 好像是说前后端通信的规则！不像是一个输入框，还是说就想调用大模型的api这种key就行？给个url+key联网就可以访问这个服务了？好像不是
 
 
 
@@ -183,6 +183,8 @@ SSE 事件怎么推送到EventBus的？
 
 
 ## Agent 
+
+agent core = context知道什么？ + loop下一步干什么？ + tools能干什么？+ memory记得什么？
 
 ReAct怎么设计的？怎么思考？怎么调用工具？怎么看结果？
 
