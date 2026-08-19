@@ -94,7 +94,10 @@ AgentLoop 是整个系统的"大脑"——它决定什么时候调用什么工�
 	1. 如果当前session已经存在，返回409 并发控制
 	2. 否则就是新的，attempt记录，然后提交到线程池里（这里大概是有线程控制，有调度的，不能无限制创建实例），并把当前事件sse传到客户端，然后听线程池调度thread_pool的管理，到时候创建agentloop实例
 4. AgentLoop (src/agent/loop.py) — ReAct 主循环 
-	1. context上下文管理：系统提示词+74知识skills+74工具+记忆memory+加载策略发现路由（这个是啥？）+rolede
+	1. context上下文管理：系统提示词+74知识skills+74工具+记忆memory+加载策略发现路由（这个是啥？）+用户role的信息
+	2. LLM大模型获取到这些信息，开始思考（因为有提示词的原因）
+		1. 调用load_skill工具找有哪些策略，找有哪些工具，哪些模板
+		2.  swarm_tool.launch("quant_strategy_desk", params={market: "A-share", objective: "高股息低估值"})  
 5. 
 
 
