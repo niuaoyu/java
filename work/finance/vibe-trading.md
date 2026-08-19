@@ -82,7 +82,7 @@ web（react19）、CLI（richTUI）、MCP（Stdio）、Rest API（FastAPI）
 
 
 
-MCP：这里代码提供的是mcp-server，也就是llm可以访问这些server，那么就要了解这里的server是如何写的？假设某个server可以调用
+MCP：这里代码提供的是mcp-server，也就是llm可以访问这些server，那么就要了解这里的server是如何写的？假设某个server可以调用天气预报，那么是怎么实现的？这个很细，先不考虑
 
 
 
@@ -102,11 +102,11 @@ SSE 事件怎么推送到EventBus的？
 
 ReAct怎么设计的？怎么思考？怎么调用工具？怎么看结果？
 
-5层压缩对话怎么压缩的？
+5层压缩对话怎么压缩的（长对话自动压缩避免超 token 限制）？
 
 工具怎么批量处理的？
 
-这里的会话持久保存怎么做的？
+这里的会话持久保存怎么做的？（FTS5 全文搜索？）
 
 
 
