@@ -82,6 +82,9 @@ web（react19）、CLI（richTUI）、MCP（Stdio）、Rest API（FastAPI）
 
 
 
+MCP：这里代码提供的是mcp-server，也就是llm可以访问这些server，那么就要了解这里的server是如何写的？假设某个server可以调用
+
+
 
 ## 会话管理 session
 
