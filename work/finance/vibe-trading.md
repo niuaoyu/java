@@ -286,9 +286,91 @@ tips：有些知识点知道了也别删
 
 
 
+```mermaid
+sequenceDiagram
+    participant User as 用户
+    participant FE as Agent.tsx
+    participant API as FastAPI
+    participant SVC as SessionService
+    participant Store as SessionStore
+    participant Bus as EventBus
+    participant Agent as AgentLoop
+    participant LLM as ChatLLM
+    participant Registry as ToolRegistry
+    participant BT as BacktestTool
+    participant Runner as BacktestRunner
+    participant Loader as LoaderRegistry
+    participant Engine as BacktestEngine
+    participant FS as RunArtifacts
 
+    User->>FE: 输入自然语言问题
+    FE->>API: POST sessions id messages
+    API->>SVC: send_message
+    SVC->>Store: 保存 user message
+    SVC->>Store: 创建 Attempt
+    SVC->>Bus: attempt.created
+    SVC-->>API: 返回 message_id 和 attempt_id
+    API-->>FE: 请求立即返回
 
+    SVC->>SVC: asyncio.create_task run_attempt
+    SVC->>SVC: build_registry
+    SVC->>LLM: 创建模型适配器
+    SVC->>Agent: 创建 AgentLoop
 
+    FE->>API: GET sessions id events
+    API->>Bus: subscribe
+    Bus-->>FE: SSE attempt.started
 
+    Agent->>Agent: 创建 run_dir
+    Agent->>FS: 写入 req.json trace manifest
+    Agent->>Agent: ContextBuilder.build_messages
+    Agent->>LLM: stream_chat
+
+    LLM-->>Agent: tool call load_skill
+    Agent->>Registry: 执行 load_skill
+    Registry-->>Agent: 返回技能内容
+    Agent->>Bus: tool_call 和 tool_result
+    Bus-->>FE: SSE 工具事件
+
+    Agent->>LLM: 继续推理
+    LLM-->>Agent: tool call write config
+    Agent->>Registry: 执行写文件工具
+    Registry-->>Agent: 返回写入结果
+
+    Agent->>LLM: 继续推理
+    LLM-->>Agent: tool call backtest
+    Agent->>BT: execute run_dir
+    BT->>Runner: subprocess execute
+
+    Runner->>Runner: 校验 config 和 signal_engine
+    Runner->>Loader: 获取 BTC 数据
+    Loader-->>Runner: 返回 OHLCV 数据
+    Runner->>Engine: run_backtest
+    Engine->>Engine: 生成信号
+    Engine->>Engine: 逐 bar 执行
+    Engine->>Engine: 计算指标
+    Engine->>FS: 写入 metrics.csv
+    Engine->>FS: 写入 reports
+    Engine->>FS: 写入 run_card
+
+    Runner-->>BT: 返回执行结果
+    BT-->>Agent: JSON 工具结果
+    Agent->>Bus: tool_result
+    Bus-->>FE: SSE 工具完成事件
+
+    Agent->>LLM: 请求最终总结
+    LLM-->>Agent: 文本最终答案
+
+    Agent->>FS: 写入 state.json
+    Agent->>FS: 写入 trace
+    Agent-->>SVC: success 和 run_dir 和 content
+
+    SVC->>Store: 保存 assistant message
+    SVC->>Bus: attempt.completed
+    Bus-->>FE: SSE 完成事件
+
+    FE->>API: GET sessions id messages
+    API-->>FE: 返回完整消息和 tool trail
+```
 
 
