@@ -258,6 +258,7 @@ Vibe-Trading/
 
 
 ```
+```
 agent/
 ├── api_server.py          # 入口1: FastAPI (≈400行)
 ├── cli/main.py            # 入口2: CLI TUI
@@ -275,16 +276,16 @@ agent/
 │   │   ├── models.py      # Session/Attempt/Message 模型
 │   │   └── events.py      # SSE 事件总线
 │   │
-│   ├── agent/
+│   ├── agent/             # AgentLoop 推理核心
 │   │   ├── loop.py        # AgentLoop ReAct 主循环 (≈2500行) ★★★
 │   │   ├── context.py     # ContextBuilder 上下文组装 (≈430行) ★
-│   │   ├── tools.py       # ToolRegistry 工具注册表
-│   │   ├── skills.py      # SkillsLoader 技能加载
+│   │   ├── tools.py       # ToolRegistry 工具注册表 74个工具
+│   │   ├── skills.py      # SkillsLoader 技能加载 74个skills
 │   │   ├── memory.py      # WorkspaceMemory 运行内存
 │   │   ├── grounding.py   # 数据"落地"层
 │   │   └── frontmatter.py # YAML 元数据解析器
 │   │
-│   ├── swarm/
+│   ├── swarm/             # DAG 多 Agent 编排
 │   │   ├── models.py      # DAG 数据模型
 │   │   ├── runtime.py     # DAG 运行时引擎 ★★
 │   │   ├── worker.py      # 单个 Agent worker 执行
@@ -299,7 +300,7 @@ agent/
 │   │
 │   ├── skills/            # 74 个金融技能 (SKILL.md)
 │   │
-│   ├── providers/
+│   ├── providers/         # LLM 提供商抽象层
 │   │   ├── llm.py         # ChatLLM 抽象层
 │   │   ├── chat.py        # LLM 调用实现
 │   │   └── capabilities.py
@@ -325,8 +326,6 @@ agent/
 │   ├── runner.py          # 回测运行器
 │   ├── metrics.py         # 绩效指标
 │   └── validation.py      # 蒙特卡洛/WalkForward
-```
-
 
 ```
 
