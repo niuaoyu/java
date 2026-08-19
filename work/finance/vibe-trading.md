@@ -98,7 +98,7 @@ AgentLoop 是整个系统的"大脑"——它决定什么时候调用什么工�
 ## 交互层 presentation
 
 web（react19）、CLI（richTUI）、MCP（Stdio）、Rest API（FastAPI）
-这几个都是前端可以用的东西，可以浏览器web，也可以命令行cli，也可以ai直接调用mcp，也可以
+这几个都是前端可以用的东西，可以浏览器web，也可以命令行cli，也可以ai直接调用mcp，这个rest api 好像是说前后端通信的规则！不像是一个输入框
 
 
 
