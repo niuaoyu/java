@@ -97,8 +97,9 @@ AgentLoop 是整个系统的"大脑"——它决定什么时候调用什么工�
 	1. context上下文管理：系统提示词+74知识skills+74工具+记忆memory+加载策略发现路由（这个是啥？）+用户role的信息
 	2. LLM大模型获取到这些信息，开始思考（因为有提示词的原因）
 		1. 调用load_skill工具找有哪些策略，找有哪些工具，哪些模板
-		2.  swarm_tool.launch("quant_strategy_desk", params={market: "A-share", objective: "高股息低估值"})  
-5. 
+		2.  swarm_tool.launch("quant_strategy_desk", params={market: "A-share", objective: "高股息低估值"})  ，大致是开始走既定流程，yaml已经定义好的策略，股票怎么筛选？因子怎么挖掘？策略怎么跑？风险怎么回测？报告怎么聚合？得到的结果依次往回返回
+
+这里有疑问：数据怎么插入的？
 
 
 
