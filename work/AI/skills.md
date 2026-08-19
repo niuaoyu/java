@@ -1,4 +1,6 @@
 
+[求助，想自己写skills，应该从哪里学起？ - 开发调优 / 开发调优, Lv1 - LINUX DO](https://linux.do/t/topic/2777118)
+
  ### product-manager
 
   主要能力：
