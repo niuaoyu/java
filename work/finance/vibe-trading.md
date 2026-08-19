@@ -73,6 +73,12 @@ AgentLoop 是整个系统的"大脑"——它决定什么时候调用什么工�
 
 
 
+前置知识
+1. **Swarm 配置化** ： 没有硬编码，需要变得参数写在yaml、json里面
+2. DAG：有向无环图
+
+
+
 # 框架
 
 ## 交互层 presentation
@@ -128,6 +134,32 @@ quantlib量化计算库是什么？
 
 
 # 细节问题
+
+```
+Vibe-Trading/
+├── agent/                          # Python 后端
+│   ├── api_server.py / cli.py / mcp_server.py  # 入口点
+│   ├── backtest/                   # 回测引擎 + 数据加载器 + 优化器
+│   ├── src/
+│   │   ├── agent/                  # AgentLoop 推理核心
+│   │   ├── tools/                  # 74个工具（每个一个文件）
+│   │   ├── skills/                 # 74个金融技能（每个一个目录）
+│   │   ├── swarm/                  # DAG 多 Agent 编排
+│   │   ├── providers/              # LLM 提供商抽象层
+│   │   ├── session/                # 会话管理
+│   │   ├── memory/                 # 持久化内存
+│   │   ├── quantlib/               # 量化计算库
+│   │   ├── trading/                # 交易连接器
+│   │   ├── live/                   # 实盘交易相关
+│   │   ├── governance/             # 模型风控
+│   │   ├── goal/                   # 交易目标管理
+│   │   └── strategy_discovery/     # 策略发现
+│   └── tests/                      # 测试
+├── frontend/                       # React 19 前端
+├── wiki/                           # 文档
+```
+
+
 
 五个层次：入口，ai控制，回测，
 
