@@ -74,9 +74,35 @@ AgentLoop 是整个系统的"大脑"——它决定什么时候调用什么工�
 
 # 框架
 
-## 交互层
+## 交互层 presentation
 
-web、CLI、MCP、Rest API
+web（react19）、CLI（richTUI）、MCP（Stdio）、Rest API（FastAPI）
+
+
+
+
+
+## 会话管理 session
+
+会话怎么创建的？怎么恢复？怎么查询？
+
+消息怎么路由到AgentLoop？
+
+SSE 事件怎么推送到EventBus的？
+
+并发怎么控制的？
+
+
+
+## Agent 
+
+ReAct怎么设计的？怎么思考？怎么调用工具？怎么看结果？
+
+5层压缩对话怎么压缩的？
+
+g'h
+
+
 
 
 
