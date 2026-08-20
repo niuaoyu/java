@@ -10,6 +10,10 @@
 3. 快速定位当前 Python 文件的内容
 	1. **快捷键**：`Ctrl + Shift + O`  ,输入要找的东西，快速定位
 4. 导航页文件快速切换：ctrl+tab
+5. 折叠
+	1. 折叠所有的class： ctrl+k+0
+	2. 折叠当前的class：ctrl+shift+[
+6. 
 
 
 
