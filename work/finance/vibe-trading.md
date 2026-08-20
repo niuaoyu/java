@@ -181,6 +181,26 @@ SSE 事件怎么推送到EventBus的？
 并发怎么控制的？
 
 
+`SessionStore` 是**硬盘**，`EventBus` 是**喇叭**，`SessionService` 是**大脑**。
+```
+SessionService (服务层/大脑)
+    │
+    ├── 用 SessionStore 读写磁盘 (持久化)
+    │
+    └── 用 EventBus 广播事件给前端 (实时推送)
+```
+SessionStore：**把 Session/Message/Attempt 存到磁盘上，以及读回来**
+
+
+
+
+
+
+
+
+
+
+
 
 ## Agent 
 
