@@ -11,7 +11,7 @@
 	1. **快捷键**：`Ctrl + Shift + O`  ,输入要找的东西，快速定位
 4. 导航页文件快速切换：ctrl+tab
 5. 折叠
-	1. 折叠所有的class： ctrl+k+0
+	1. 折叠所有的class： ctrl+k+0，展开所有的class：Ctrl+K+J
 	2. 折叠当前的class：ctrl+shift+[
 6. 
 
