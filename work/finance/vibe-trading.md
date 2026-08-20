@@ -195,6 +195,7 @@ SessionStore：**把 Session/Message/Attempt 存到磁盘上，以及读回来**
 
 **重点追 `EventBus` 的 `set_loop()` 是在哪里用到的。** 那样你就能真正理解为什么这里要把 `loop` 塞进去，而不是只停留在“loop 是异步循环”这个概念上。
 
+==这里实现是用队列做的，也就是阻塞后就用下一个==
 
 
 
