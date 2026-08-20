@@ -191,7 +191,7 @@ SessionService (服务层/大脑)
 ```
 SessionStore：**把 Session/Message/Attempt 存到磁盘上，以及读回来**
 
-
+`EventBus` — SSE 事件总线：**当 AgentLoop 在后台线程执行时，把进度推送给前端的 HTTP 长连接。**
 
 
 
