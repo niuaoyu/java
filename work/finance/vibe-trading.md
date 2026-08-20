@@ -193,7 +193,7 @@ SessionStore：**把 Session/Message/Attempt 存到磁盘上，以及读回来**
 
 `EventBus` — SSE 事件总线：**当 AgentLoop 在后台线程执行时，把进度推送给前端的 HTTP 长连接。**
 
-
+**重点追 `EventBus` 的 `set_loop()` 是在哪里用到的。** 那样你就能真正理解为什么这里要把 `loop` 塞进去，而不是只停留在“loop 是异步循环”这个概念上。
 
 
 
