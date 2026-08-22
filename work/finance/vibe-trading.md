@@ -235,6 +235,13 @@ flowchart TB
     
 ```
 
+队列（asyncio.Queue）是每个 SSE 连接专属的“实时状态收件箱”，用来临时存放 Agent 执行过程中产生的动态事件（如 tool_call、attempt.started）。
+
+subscribe() 的无限循环不断从队列取出事件，通过 SSE 推送给前端，让 UI 实时更新。而完整的对话历史则永久保存在 messages.jsonl 中，两者分工明确。
+
+
+
+
 
 
 
