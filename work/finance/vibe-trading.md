@@ -199,6 +199,14 @@ SessionStore：**把 Session/Message/Attempt 存到磁盘上，以及读回来**
 
 
 EventBus 的作用就是解耦：发布者不需要知道谁会收到事件，订阅者不需要知道事件从哪里来。它像一个智能路由器，确保了在不同线程和异步任务之间安全、可靠地传递消息
+每一个会话有一条独立的“传送带”，发布者（业务代码）只管把事件放到传送带上（emit/publish），订阅者（SSE 连接）只管从传送带上取（subscribe/yield）
+传送带内部处理：线程安全切换（call_soon_threadsafe）、历史事件重放（replay）、缓冲清理（clear）
+
+
+
+
+
+
 
 
 
