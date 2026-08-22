@@ -219,19 +219,19 @@ flowchart TB
         AGENT[AgentLoop<br>业务逻辑]
     end
 
-    FE1 -->|1. GET /events 建立 SSE| API
-    FE2 -->|1. GET /events 建立 SSE| API
-    API -->|2. 调用 subscribe()| BUS
-    BUS -->|3. 创建独立队列| Q1[Queue for Tab A]
-    BUS -->|3. 创建独立队列| Q2[Queue for Tab B]
+    FE1 -->|"1. GET /events 建立 SSE"| API
+    FE2 -->|"1. GET /events 建立 SSE"| API
+    API -->|"2. 调用 subscribe"| BUS
+    BUS -->|"3. 创建独立队列"| Q1["Queue for Tab A"]
+    BUS -->|"3. 创建独立队列"| Q2["Queue for Tab B"]
 
-    AGENT -->|4. 产生事件<br>bus.emit('tool_call')| BUS
-    BUS -->|5. 广播：遍历所有队列| Q1
-    BUS -->|5. 广播：遍历所有队列| Q2
-    Q1 -->|6. yield 事件| API
-    Q2 -->|6. yield 事件| API
-    API -->|7. SSE 文本帧| FE1
-    API -->|7. SSE 文本帧| FE2
+    AGENT -->|"4. 产生事件 bus.emit('tool_call')"| BUS
+    BUS -->|"5. 广播：遍历所有队列"| Q1
+    BUS -->|"5. 广播：遍历所有队列"| Q2
+    Q1 -->|"6. yield 事件"| API
+    Q2 -->|"6. yield 事件"| API
+    API -->|"7. SSE 文本帧"| FE1
+    API -->|"7. SSE 文本帧"| FE2
     
 ```
 
