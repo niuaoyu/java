@@ -1,3 +1,10 @@
+要能理解agent底层架构，知道ReAct、plan-and-execute这些模式，能设计复杂的多agent协作系统，能在生产环境优化性能！最后达到能从零实现一个agent框架，理解llm推理机制，能设计大规模agent集群调度系统。
+
+学什么？
+1. 向量数据库，不仅是存embedding，让座相似搜索，要知道为什么pinecone用hnsw算法？milvus支持多种
+
+
+
 
 Human-in-the-Loop 怎么实现？ 
 LangGraph 的理解？之上的 Deep Agents 封装框架？ 上下文管理的手段？除了裁剪压缩还有啥？ 
@@ -47,7 +54,7 @@ RAG是知识库检索，却讲不清楚切片策略、向量库选型、召回�
 
 如果设计支持百万级并发的agent调度系统，有什么思路？
 
-要能理解agent底层架构，zhi'ado'a
+
 
 
 
