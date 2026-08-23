@@ -126,7 +126,103 @@ AgentLoop 是整个系统的"大脑"——它决定什么时候调用什么工�
 
 这里有疑问：数据怎么插入的？
 
+```mermaid
+flowchart TD
+    A["用户在 Composer 输入消息并点击发送"] --> B["Composer.handleSubmit / submitPrompt"]
+    B --> C["Agent.tsx.runPrompt"]
 
+    C --> D["乐观更新前端用户消息"]
+    C --> E{"是否已有 session_id?"}
+
+    E -- 否 --> F["POST /sessions<br/>创建 Session"]
+    F --> G["保存 session_id 并更新 URL"]
+    E -- 是 --> G
+
+    G --> H["setupSSE(session_id)"]
+    H --> H1["GET /sessions/{sid}/events"]
+    H1 --> H2["require_event_stream_auth"]
+    H2 --> H3["EventSource 建立 SSE 连接"]
+
+    G --> I["POST /sessions/{sid}/messages"]
+    I --> I1["require_auth"]
+    I1 --> I2["FastAPI 解析 session_id + SendMessageRequest"]
+    I2 --> I3["SessionService.send_message"]
+
+    I3 --> I4["保存用户 Message"]
+    I4 --> I5["EventBus.emit message.received"]
+    I5 --> H3
+
+    I3 --> I6["创建 Attempt"]
+    I6 --> I7["EventBus.emit attempt.created"]
+    I7 --> H3
+
+    I3 --> I8["asyncio.create_task(_run_attempt)"]
+    I8 --> I9["Attempt.mark_running"]
+    I9 --> I10["EventBus.emit attempt.started"]
+    I10 --> H3
+
+    I8 --> J["SessionService._run_with_agent"]
+    J --> J1["创建 ChatLLM / PersistentMemory"]
+    J1 --> J2["build_registry 注册工具"]
+    J2 --> J3["创建 AgentLoop"]
+    J3 --> K["AgentLoop.run"]
+
+    K --> K1{"ReAct 迭代"}
+    K1 --> K2["ChatLLM.stream_chat"]
+    K2 --> K3["text_delta / reasoning_delta"]
+    K3 --> L["AgentLoop event_callback"]
+    L --> M["EventBus.emit"]
+    M --> H3
+
+    K2 --> K4{"LLM 是否返回工具调用?"}
+
+    K4 -- 否 --> K5["得到 final_content"]
+    K5 --> K6["AgentLoop 返回 success"]
+    K6 --> N["SessionService 持久化 Attempt"]
+    N --> N1["保存 assistant Message"]
+    N1 --> N2["EventBus.emit attempt.completed"]
+    N2 --> H3
+
+    K4 -- 是 --> K7["_process_tool_calls"]
+    K7 --> K8["tool_call 事件"]
+    K8 --> M
+
+    K7 --> K9["ToolRegistry.execute"]
+    K9 --> K10{"get_market_data?"}
+
+    K10 -- 是 --> K11["MarketDataTool.execute"]
+    K11 --> K12["fetch_market_data_json"]
+    K12 --> K13["loader.fetch / fallback chain"]
+    K13 --> K14["返回 JSON 市场数据"]
+
+    K10 -- 其他工具 --> K15["执行对应 BaseTool.execute"]
+
+    K14 --> K16["tool_result 事件"]
+    K15 --> K16
+    K16 --> M
+    K16 --> K17["结果加入 messages"]
+    K17 --> K1
+
+    H3 --> O["useSSE.handleRaw"]
+    O --> P["按事件类型调用 Agent.tsx handler"]
+
+    P --> P1["text_delta"]
+    P1 --> P2["queueStreamUpdate"]
+    P2 --> P3["每 80ms flush"]
+    P3 --> P4["Zustand.appendDelta"]
+    P4 --> P5["streamingText"]
+    P5 --> P6["MarkdownContent 实时渲染"]
+
+    P --> P7["tool_call / tool_result"]
+    P7 --> P8["更新 activity / toolCalls 工具进度"]
+
+    P --> P9["attempt.completed"]
+    P9 --> P10["优先使用 data.summary"]
+    P10 --> P11["否则使用累积的 streamedAnswer"]
+    P11 --> P12["加入永久 answer Message"]
+    P12 --> P13["清理 streaming 状态并设置 idle"]
+    P13 --> P14["MessageBubble + MarkdownContent 渲染完整答案"]
+```
 
 
 
