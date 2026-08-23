@@ -40,3 +40,7 @@ flowchart TB
 subscribe() 的无限循环不断从队列取出事件，通过 SSE 推送给前端，让 UI 实时更新。而完整的对话历史则永久保存在 messages.jsonl 中，两者分工明确。
 
 
+**前端发起 SSE 连接 → 后端 `subscribe()` 为此连接创建一个专属队列 → AgentLoop 执行时通过 `emit()` 产生事件 → `publish()` 将事件广播到该会话的所有队列 → 每个 `subscribe()` 循环从自己的队列取出事件 → `yield` 返回给 FastAPI → 通过 SSE 推送到前端。**
+
+
+
