@@ -264,18 +264,7 @@ async def get_user(user_id: int):
     return {"id": user_id, "name": "Alice"}
 ```
 
-## 七、对比总结
-
-| 特性 | 直接在 app 上装饰 | 使用 APIRouter |
-|------|------------------|----------------|
-| 组织方式 | 所有路由都在主文件 | 按功能模块分文件 |
-| 路径前缀 | 手动写完整路径 | 使用 prefix 自动添加 |
-| 文档分组 | 需要手动设置 tags | 统一设置 tags |
-| 复用性 | 差，无法移植 | 好，可以导入使用 |
-| 依赖管理 | 每个路由单独配置 | 可以统一配置 |
-| 适合场景 | 小型项目 | 中大型项目 |
-
-## 八、完整可用示例
+## 完整可用示例
 
 ```python
 # 文件结构
@@ -324,6 +313,3 @@ app.include_router(user_router)
 2. **prefix = 自动添加路径前缀**，不用重复写 `/api/user`
 3. **tags = API 文档分组**，在 Swagger 中清晰显示
 4. **注册方式 = `app.include_router(router)`**，将路由挂载到主应用
-5. **你的理解完全正确**：前端访问 `/api/user/register` 时，就会执行 `register_user` 函数！
-
-现在明白了吗？APIRouter 就是 FastAPI 的"模块化"武器！🎯
