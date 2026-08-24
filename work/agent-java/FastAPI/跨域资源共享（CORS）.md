@@ -121,8 +121,6 @@ async def get_data_cors():
     return {"message": "这是有CORS的数据"}
 ```
 
-这里代码有点问题，
-
 **前端 (HTML - port 5173)：**
 
 ```html
@@ -161,7 +159,9 @@ async def get_data_cors():
 </body>
 </html>
 ```
+这里后端代码写的不对，这里之所以testWithCors()能跨域成功是访问的@app_with_cors.get("/api/data")这个路由，之所以不是@app.get("/api/data")这个路由是看在启动后端项目的时候，怎么启动的，如果是uvicorn app:app --port 8000 这时候是访问的 @app.get("/api/data")这个路由；如果是 uvicorn app:app_with_cors --port 8000 这时候是访问的 @app_with_cors..get("/api/data")这个路由
 
+这里是ai给的代码错误
 
 
 
