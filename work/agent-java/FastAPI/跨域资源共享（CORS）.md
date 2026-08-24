@@ -121,6 +121,8 @@ async def get_data_cors():
     return {"message": "这是有CORS的数据"}
 ```
 
+这里代码有点问题，
+
 **前端 (HTML - port 5173)：**
 
 ```html
