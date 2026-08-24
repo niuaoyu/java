@@ -1,6 +1,3 @@
-很好的问题！让我详细解释 Swagger 和 tags 的关系。
-
-## 一、Swagger 是什么？
 
 **Swagger = API 文档 + 在线测试工具**
 
