@@ -153,12 +153,13 @@ MCP 里最重要的概念是 **Tool**。服务端注册 Tool，客户端调用 T
 
 MCP的C/S架构， 5个核心概念，MCP遵循客户端-服务器架构（client-server）
 1. MCP主机(MCP Hosts)：作为运行MCP的主应用程序，例如Claude Desktop、Cursor、Cline或AI工具。为用户提供与LLM交互的接口，同时集成MCPClient以连接MCPServer。
-2. MCP客户端(MCP Clients)
+2. MCP客户端(MCP Clients)：MCP client充当LLM和MCP server之间的桥梁，嵌入在主机程序中，主要负责接收来自LLM的请求；将请求转发到相应的MCP server，将MCP server的结果返回给LLM
 3. MCP服务器(MCP Servers)
 4. 本地资源(Local Resources)
 5. 远程资源(Remote Resources)
 
-mcp hosts可以理解就是这些ai工具，这些工具包含llm+tools 其中tools里有mcp clients 也就是客户端，具体实现的地方在mcp 
+mcp hosts不太理解具体是在哪个部分！
+这些ai工具（claudecode codex），这些工具包含llm+tools 其中tools里有mcp clients 也就是客户端，这个clients就在充当llm和mcp servers的桥梁，具体实现的地方在mcp servers上，比如高德地图的mcp servers，拿到接口key可以直接调用结果返回给mcp client，然后再给大模型！
 
 
 
