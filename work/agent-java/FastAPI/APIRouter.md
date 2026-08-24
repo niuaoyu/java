@@ -64,7 +64,7 @@ app.include_router(product_router) # 注册商品路由
 # ✅ 清晰！模块化！
 ```
 
-## 二、APIRouter 的参数详解
+## APIRouter 的参数详解
 
 ```python
 from fastapi import APIRouter
@@ -101,7 +101,7 @@ async def update_user():
 | `responses` | 统一响应状态码描述 | `{404: {...}}` |
 | `dependencies` | 所有路由共享的依赖 | `[Depends(auth)]` |
 
-## 三、完整的注册流程
+## 完整的注册流程
 
 ### 步骤 1：创建路由文件
 
@@ -188,111 +188,7 @@ async def root():
 # 实际 URL：/api/user/profile/123
 ```
 
-## 四、APIRouter 的注册原理
-
-### 类比理解
-
-```
-主应用 (app) 就像一个大的路牌
-                    ↓
-              ┌─────────────┐
-              │   主路牌    │
-              │  (app)     │
-              └─────────────┘
-                    ↓
-     ┌──────────────┼──────────────┐
-     ↓              ↓              ↓
-┌─────────┐  ┌─────────┐  ┌─────────┐
-│用户路牌 │  │商品路牌 │  │订单路牌 │
-│(router) │  │(router) │  │(router) │
-└─────────┘  └─────────┘  └─────────┘
-     ↓              ↓              ↓
-  /register      /list         /create
-  /login         /detail       /cancel
-  /profile       /update       /status
-```
-
-### 代码层面的原理
-
-```python
-# 简单模拟 APIRouter 的工作方式
-class MyAPIRouter:
-    def __init__(self, prefix="", tags=None):
-        self.prefix = prefix
-        self.tags = tags or []
-        self.routes = []  # 存储所有路由
-    
-    def post(self, path):
-        def decorator(func):
-            # 实际路径 = prefix + path
-            full_path = self.prefix + path
-            self.routes.append({
-                "path": full_path,
-                "method": "POST",
-                "func": func,
-                "tags": self.tags
-            })
-            return func
-        return decorator
-
-# 使用
-user_router = MyAPIRouter(prefix="/api/user")
-user_router.post("/register")(register_user)
-
-# 注册到主应用
-app.include_router(user_router)
-# 内部会遍历 router.routes，添加到 app 中
-```
-
-## 五、多路由注册示例
-
-```python
-# user.py
-from fastapi import APIRouter
-router = APIRouter(prefix="/api/user", tags=["user"])
-
-@router.get("/list")
-async def list_users():
-    return [{"id": 1, "name": "Alice"}]
-
-# product.py
-from fastapi import APIRouter
-router = APIRouter(prefix="/api/product", tags=["product"])
-
-@router.get("/list")
-async def list_products():
-    return [{"id": 1, "name": "iPhone"}]
-
-# order.py
-from fastapi import APIRouter
-router = APIRouter(prefix="/api/order", tags=["order"])
-
-@router.post("/create")
-async def create_order():
-    return {"order_id": 123}
-```
-
-```python
-# main.py
-from fastapi import FastAPI
-from user import router as user_router
-from product import router as product_router
-from order import router as order_router
-
-app = FastAPI()
-
-# 注册所有路由器
-app.include_router(user_router)
-app.include_router(product_router)
-app.include_router(order_router)
-
-# 路由映射：
-# GET  /api/user/list      → user.py
-# GET  /api/product/list   → product.py
-# POST /api/order/create   → order.py
-```
-
-## 六、APIRouter 的高级用法
+## APIRouter 的高级用法
 
 ### 1. 路由依赖（统一鉴权）
 
