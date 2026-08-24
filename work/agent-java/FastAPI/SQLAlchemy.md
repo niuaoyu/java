@@ -30,8 +30,4 @@ async def get_db():
 		finally: 
 			await session.close()
 
-class News(Base): 
-	__tablename__ = "news" # 创建索引：提升查询速度 
-	__table_args__ = ( Index('fk_news_category_idx', 'category_id'), Index('idx_publish_time', 'publish_time') )
-
 ```
