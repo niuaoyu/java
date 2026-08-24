@@ -1,0 +1,1 @@
+pip install "sqlalchemy[asyncio]" aiomysql
