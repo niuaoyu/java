@@ -1,0 +1,205 @@
+跨域资源共享（CORS）是一种浏览器安全机制，用于允许运行在一个源（Origin）的 Web 应用，通过浏览器向另一个源的服务器发起跨域 HTTP 请求，并在服务器授权的前提下获取资源。
+
+**"源" = 协议 + 域名 + 端口** 的组合,**只要这三个中有任何一个不同，就是不同的"源"！**
+
+```python
+# 举例说明
+http://localhost:5173
+# 协议: http
+# 域名: localhost  
+# 端口: 5173
+
+https://example.com:443
+# 协议: https
+# 域名: example.com
+# 端口: 443 (https默认端口，可以省略)
+```
+
+**跨域 = 从一个"源"去访问另一个"源"的资源**
+
+```javascript
+// 你的前端代码在 http://localhost:5173 运行
+// 它想请求 http://localhost:8000 的后端接口
+
+fetch('http://localhost:8000/api/users')
+// ❌ 跨域！因为端口不同 (5173 vs 8000)
+```
+
+为什么要限制跨域？（核心原因）
+想象你在银行（localhost:5173）存了钱，银行给你发了张银行卡（cookie/token），现在你逛商场（localhost:8000），商场说："把你的银行卡给我看看"（跨域请求）
+如果没有跨域限制：商场就能拿到你的银行卡信息，盗刷你的钱！
+有了跨域限制：商场必须得到银行授权（CORS配置），才能查看你的卡，如果没有跨域限制，恶意网站就能利用你的 cookie 转账！浏览器因为同源策略，阻止了这个请求
+
+怎么解决跨域？
+
+### 方案1：后端配置 CORS（推荐）
+
+**FastAPI 配置：**
+
+```python
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+app = FastAPI()
+
+# 配置 CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],  # 允许的源
+    allow_credentials=True,
+    allow_methods=["*"],  # 允许所有方法
+    allow_headers=["*"],  # 允许所有请求头
+)
+
+@app.get("/api/users")
+async def get_users():
+    return [{"id": 1, "name": "Alice"}]
+```
+
+**Flask 配置：**
+
+```python
+from flask import Flask
+from flask_cors import CORS
+
+app = Flask(__name__)
+CORS(app)  # 允许所有跨域请求
+
+@app.route('/api/users')
+def get_users():
+    return [{"id": 1, "name": "Alice"}]
+```
+
+### 方案2：前端代理（开发环境）
+
+```javascript
+// vite.config.js (Vite 配置)
+export default {
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8000',
+        changeOrigin: true
+      }
+    }
+  }
+}
+
+// 前端代码可以直接用 /api，不跨域
+fetch('/api/users')  // 实际请求到 http://localhost:8000/api/users
+```
+
+
+
+
+### 实战演示 完整的前后端示例
+
+**后端 (FastAPI - port 8000)：**
+
+```python
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+app = FastAPI()
+
+# 没有配置 CORS
+@app.get("/api/data")
+async def get_data():
+    return {"message": "这是数据"}
+
+# 配置了 CORS
+app_with_cors = FastAPI()
+app_with_cors.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # 允许所有源（生产环境不推荐）
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app_with_cors.get("/api/data")
+async def get_data_cors():
+    return {"message": "这是有CORS的数据"}
+```
+
+**前端 (HTML - port 5173)：**
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>跨域测试</title>
+</head>
+<body>
+    <button onclick="testNoCors()">没有CORS</button>
+    <button onclick="testWithCors()">有CORS</button>
+    
+    <script>
+    async function testNoCors() {
+        try {
+            const response = await fetch('http://localhost:8000/api/data');
+            const data = await response.json();
+            console.log('成功:', data);
+        } catch (error) {
+            console.error('失败:', error.message);
+            // 输出: 失败: Failed to fetch (跨域错误)
+        }
+    }
+    
+    async function testWithCors() {
+        try {
+            const response = await fetch('http://localhost:8001/api/data');
+            const data = await response.json();
+            console.log('成功:', data);
+            // 输出: 成功: {message: "这是有CORS的数据"}
+        } catch (error) {
+            console.error('失败:', error);
+        }
+    }
+    </script>
+</body>
+</html>
+```
+
+
+
+
+
+常见跨域场景速查表
+
+| 前端 | 后端 | 是否跨域 | 原因 |
+|------|------|---------|------|
+| http://localhost:5173 | http://localhost:8000 | ✅ 跨域 | 端口不同 |
+| http://example.com | https://example.com | ✅ 跨域 | 协议不同 |
+| http://example.com | http://api.example.com | ✅ 跨域 | 域名不同 |
+| http://example.com | http://example.com:8080 | ✅ 跨域 | 端口不同 |
+| http://example.com | http://example.com | ❌ 不跨域 | 完全相同 |
+
+最佳实践总结
+### 开发环境
+```python
+# 允许所有源（方便开发）
+allow_origins=["*"]
+# 或使用前端代理
+```
+### 生产环境
+```python
+# 只允许特定域名
+allow_origins=[
+    "https://example.com",
+    "https://www.example.com"
+]
+# 不要使用 "*"
+```
+
+### 安全建议
+1. ✅ 只允许必要的源
+2. ✅ 限制允许的方法（GET/POST 等）
+3. ✅ 限制允许的请求头
+4. ✅ 生产环境不要用 `"*"`
+5. ✅ 使用 HTTPS
+
+记住这三点就能理解跨域：
+
+1. **为什么有跨域？** → 浏览器安全策略（保护用户数据）
+2. **什么是跨域？** → 协议/域名/端口 任何一个不同就是跨域
+3. **怎么解决？** → 后端配置 CORS（告诉浏览器"我允许"）
