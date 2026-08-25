@@ -8,6 +8,9 @@ https://sideproject.guide/
 
 
 AI时代到底怎么赚钱？先去做离钱最近的事
+1. ai能帮忙把产品做出来，但是如何把产品讲给一个真实的人听，ai帮不了
+2. 
+
 https://oee5lr7gsk.feishu.cn/docx/FdROdApYFoumtRxLqZjcKwUmnDc
 
 
