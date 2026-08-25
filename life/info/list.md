@@ -18,6 +18,11 @@ AI时代到底怎么赚钱？先去做离钱最近的事
 
 https://oee5lr7gsk.feishu.cn/docx/FdROdApYFoumtRxLqZjcKwUmnDc
 
+如何更有效的链接见面会认识的圈友
+
+
+
+https://oee5lr7gsk.feishu.cn/wiki/MecHw2h5AiDG8CkiVBJcgxmdnWb
 
 ## 6月
 
