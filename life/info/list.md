@@ -2,6 +2,15 @@
 
 https://sideproject.guide/
 # 2026
+
+
+## 8月
+
+
+AI时代到底怎么赚钱？先去做离钱最近的事
+https://oee5lr7gsk.feishu.cn/docx/FdROdApYFoumtRxLqZjcKwUmnDc
+
+
 ## 6月
 
 一文讲透新手做副业怎么选项目【港湾计划】
