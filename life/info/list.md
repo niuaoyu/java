@@ -18,11 +18,11 @@ AI时代到底怎么赚钱？先去做离钱最近的事
 
 https://oee5lr7gsk.feishu.cn/docx/FdROdApYFoumtRxLqZjcKwUmnDc
 
-如何更有效的链接见面会认识的圈友
 
-
-
-https://oee5lr7gsk.feishu.cn/wiki/MecHw2h5AiDG8CkiVBJcgxmdnWb
+当我们从生财看到一个已经有人拿到结果的机会后，普通人怎样用最小成本快速验证，如何从风向标找项目并且赚到第1块钱的方法。而不是一直停留在考察和犹豫中？
+1. 找项目不是等到完全想清楚再开始，而是先确认自己具备最低条件，然后立刻做一次最小验证。项目到底适不适合自己，只能在把手弄脏之后判断出来。
+2. 
+https://k0vejd77jle.feishu.cn/wiki/W1hNwkzjmiSMBikvS7qcgMmNnTd
 
 ## 6月
 
