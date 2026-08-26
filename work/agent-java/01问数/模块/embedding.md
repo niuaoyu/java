@@ -39,7 +39,7 @@
 
 ## 四、Text Embedding Inference 在这个项目里是干什么的？
 
-在"掌柜问数"项目里，`Text Embedding Inference` 就是一个**提供 Embedding 转换服务的服务器**。
+在"掌柜问数"项目里，`Text Embedding Inference` 就是一个**提供 Embedding 转换服务的服务器**
 
 ### 它的工作流程：
 
@@ -64,8 +64,6 @@ Qdrant 找"数学距离最近"的元数据记录
 **如果没有 Embedding**：用户问"销售额"，计算机不知道"销售额"和数据库里的 `order_amount` 是同一个意思。
 
 **有了 Embedding**：计算机会发现"销售额"的向量和 `order_amount` 这个字段的描述向量"订单金额"非常接近，于是匹配上了。
-
----
 
 ## 五、BAAI/bge-large-zh-v1.5 是什么？（你项目里用的模型）
 
