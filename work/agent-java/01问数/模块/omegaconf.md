@@ -30,8 +30,6 @@ db_host = config["db_meta"]["host"]  # 用字符串取值
 | **3** | `OmegaConf.merge(structured, context)` | 把 **“原材料（yaml）”** 倒进 **“模具（dataclass）”** 里，让它们合二为一。 | **核心妙用：** yaml 里有的值用 yaml 的，yaml 里没写的字段，自动用 dataclass 里的默认值！ |
 | **4** | `OmegaConf.to_object(...)`             | 把合并后的东西，**正式变回一个 Python 对象**。                       | 这一步之后，你就可以用 `config.db_meta.host` 来取值，享受 IDE 的代码补全了！         |
 
----
-
 ### 三、举个现实例子，你就懂这波操作有多爽了
 
 假设你的 `app_config.yaml` 里**忘记写** `qdrant` 的配置了（或者某个实习生不小心删了）。
@@ -85,13 +83,11 @@ app_config: AppConfig = OmegaConf.to_object(merged)
 print(app_config.db_meta.host)  # 假如 yaml 里写了 192.168.1.1，就输出这个；没写就输出 localhost
 ```
 
----
-
-### 五、一句话总结
-
 **Omegaconf 不是用来“读 yaml”的，它是用来“管理配置”的。**
 
 - 用 `yaml.safe_load`：相当于**从仓库拿散装零件**，你得自己记住每个零件长什么样，拿错了就崩。
 - 用 **Omegaconf + @dataclass**：相当于**先画好图纸，再去仓库领料**。图纸里规定了哪里该放螺丝、哪里该放螺母，仓库里缺的料自动用备用件（默认值）顶上，最后组装成一个坚固的机器。
 
-你现在觉得它繁琐，是因为项目还没做大。等你的配置文件有几十个层级、十几个环境（dev/test/prod）时，你就会发现，这种**“结构即文档、合并即覆盖、缺省即容错”**的模式，简直是救命稻草。😄
+你现在觉得它繁琐，是因为项目还没做大。等你的配置文件有几十个层级、十几个环境（dev/test/prod）时，你就会发现，这种**“结构即文档、合并即覆盖、缺省即容错”**的模式，简直是救命稻草。
+
+
