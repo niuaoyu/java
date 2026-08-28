@@ -1,6 +1,6 @@
 
 [(4 条消息) 一个有趣的 Git 练习网站 - 知乎](https://zhuanlan.zhihu.com/p/383960650)
-
+https://liaoxuefeng.com/books/git/
 
 ## 1. 新环境下用 SSH 连接 GitHub
 
