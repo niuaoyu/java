@@ -2,7 +2,7 @@
 
 [deusyu/harness-engineering: Harness Engineering 学习指南 — 从概念理解到独立实践的深度学习档案](https://github.com/deusyu/harness-engineering)
 
-
+[标叔的 AI 教学站 · 多个 AI 技术框架从入门到精通](https://liangdabiao.github.io/)
 
 零基础的先看菜鸟教程：[https://www.runoob.com/ai-agent/ai-agent-tutorial.html](https://www.runoob.com/ai-agent/ai-agent-tutorial.html)  
 然后再学hello-agent:GitHub - datawhalechina/hello-agents: 《从零开始构建智能体》——从零开始的智能体原理与实践教程 · GitHub  
