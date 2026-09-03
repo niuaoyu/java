@@ -1,4 +1,10 @@
+
+[【面试拷打】面试了十几家 Agent 岗位，整理了面试题～ - 开发调优 - LINUX DO](https://linux.do/t/topic/2365650)
+
 https://my.feishu.cn/wiki/YeXfw5N1eic2cEkRfMkcLYZUnVi
+
+[guocong-bincai/ai-interview-guide: AI 应用开发、Agent开发、RAG开发、FDE开发岗位面试宝典 - 二狗子整理](https://github.com/guocong-bincai/ai-interview-guide)
+
 要能理解agent底层架构，知道ReAct、plan-and-execute这些模式，能设计复杂的多agent协作系统，能在生产环境优化性能！最后达到能从零实现一个agent框架，理解llm推理机制，能设计大规模agent集群调度系统。
 
 **视频只教如何用，但面试考，为什么这么设计？怎么做更好？**

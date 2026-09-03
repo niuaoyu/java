@@ -1,8 +1,16 @@
 [ai-boost/awesome-harness-engineering | zdoc.app](https://www.zdoc.app/zh/ai-boost/awesome-harness-engineering)
 
+[佬们，想换工作了，怎么学习 AI Agent 开发呀 - 开发调优 - LINUX DO](https://linux.do/t/topic/2698670)
+
 [deusyu/harness-engineering: Harness Engineering 学习指南 — 从概念理解到独立实践的深度学习档案](https://github.com/deusyu/harness-engineering)
 
+[深入理解 AI Agent - AI Agents in Depth](https://bojieli.github.io/ai-agent-book/#%E5%85%B3%E4%BA%8E)
+
 [标叔的 AI 教学站 · 多个 AI 技术框架从入门到精通](https://liangdabiao.github.io/)
+
+[⁠⁠⁠⁠​​​‍​​​﻿​​﻿​​‍​⁠​⁠﻿​​​​‍﻿​‍​​‬​﻿​​‍‍‬​​​​‍​​AI大模型资源合集 - 飞书云文档](https://my.feishu.cn/wiki/SNrYwgGoUioYJlkIUdEcn4nHnsc)
+
+[LangGraph agent 记忆能力](https://www.yuque.com/xiaxiaoshuai/xsc8y4/xu2ex7eadroemu79)
 
 零基础的先看菜鸟教程：[https://www.runoob.com/ai-agent/ai-agent-tutorial.html](https://www.runoob.com/ai-agent/ai-agent-tutorial.html)  
 然后再学hello-agent:GitHub - datawhalechina/hello-agents: 《从零开始构建智能体》——从零开始的智能体原理与实践教程 · GitHub  
@@ -26,6 +34,11 @@
 不拘泥于一种模型agent，可以是多个agent共同协作或其他方式。帮助你从只有一个需求开始完成一个标准的中大项目。
 
 从Agent 认知校准, Agent Loop, Tool System, Context Engineering, Memory 与 RAG, Multi-Agent, Agent 与 Harness 进阶 —— 编排、观测与部署 Agent 与 Harness 进阶 —— 编排、观测与部署,基础出发
+
+
+最好的AIAgent参考资料是OpenCOde和Codex源码，叫AI整理大纲对着看，包括其中对于session会话管理，agent上下文，tool并行和审核，市面上教程没有哪个可以比这两个成熟产品源码更有说服力的
+
+还有pi
 
 
 

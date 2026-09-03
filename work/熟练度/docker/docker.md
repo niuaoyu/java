@@ -31,6 +31,8 @@ dockerfile：输入代码和环境，打包得到一个镜像，记录好一道�
 docker-compose.yml：输入镜像，然后启动所有镜像，不负责做菜，只负责摆盘上桌
 **Dockerfile 解决“怎么做一个容器”**，**docker-compose.yml 解决“怎么把多个容器串起来一起跑”**
 
+docker compose 多容器管理工具，通过yaml配置文件，一键启动，关闭多个关联容器
+
 
 端口映射
 
