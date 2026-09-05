@@ -1,4 +1,7 @@
 
+简历突出AI Agent项目经验，技术栈覆盖LangChain/LangGraph/RAG/GraphRAG/ReAct/MCP等主流方向。
+
+
 岗位职责
 
 1、Agent核心架构开发：负责Agent核心模块（任务规划、上下文管理、长期/短期记忆、工具调用）的设计与开发，构建高可靠、低延迟的智能体底层框架；
@@ -23,6 +26,4 @@
 4、有AI核心业务线实习经历，或主导过完整的大模型应用从0到1落地经验；
 5、熟悉分布式系统设计，有高并发、大流量系统后端开发及性能调优经验。
 
-# Agent
 
-[DeepSeek招聘](https://app.mokahr.com/social-recruitment/high-flyer/140576#/job/8d40c764-d2b2-49b1-826c-e3f2adb75c01)

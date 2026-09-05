@@ -216,13 +216,3 @@ https://github.com/wangyingqi-x/workflow-showcase-platform/
 
 开源项目，欢迎Star。
 
-## 附件三：简历模板
-
-文件名：大模型应用开发.pdf（442.8K）
-
-说明：分享人实际使用的简历，已通过希音、360、汇丰银行等公司筛选。
-
-简历突出AI Agent项目经验，技术栈覆盖LangChain/LangGraph/RAG/GraphRAG/ReAct/MCP等主流方向。
-
-可以参考其项目描述写法和技术栈组织方式。
-

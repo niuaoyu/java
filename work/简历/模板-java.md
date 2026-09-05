@@ -1,9 +1,5 @@
 # Java程序员简历模板
 
-本简历模板由国内首家互联网人才拍卖网站「 [JobDeer.com](http://www.jobdeer.com) 」提供。
-
-（括号里的是我们的顾问编写的说明，建议在简历书写完成后统一删除）
-
 ## 先讲讲怎样才是一份好的技术简历
 
 首先，一份好的简历不光说明事实，更通过FAB模式来增强其说服力。
@@ -41,7 +37,6 @@
  - 胶布帝/男/1990 
  - 本科/萌鹿大学计算机系 
  - 工作年限：3年
- - 微博：[@JobDeer](http://weibo.com/jobdeer) （``` 如果没有技术相关内容，也可以不放 ```）
  - 技术博客：http://blog.github.io ( ``` 使用GitHub Host的Big较高 ```  )
  - Github：http://github.com/geekcompany ( ``` 有原创repo的Github帐号会极大的提升你的个人品牌 ```  )
 

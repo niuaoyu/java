@@ -67,3 +67,5 @@ git push
 4. 如果想要删除除了某个src目录下的，其他所有的modules，可以写`**/modules`+`!/src/**/modules`
 5. 如果当前的modules已经被git追踪了（git add 或者git commit），仅仅加.gitignore是不够的，需要先从git索引移除（移除索引不会影响本地文件）`git rm -r --cached **/modules`，做完后执行 `git add .gitignore`
 
+
+理解 `main`、`develop`、`feature/*` 分支的区别；理解 **PR/MR 流程**。

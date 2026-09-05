@@ -1,4 +1,8 @@
 
+
+[DeepSeek招聘](https://app.mokahr.com/social-recruitment/high-flyer/140576#/job/8d40c764-d2b2-49b1-826c-e3f2adb75c01)
+
+
 摩尔线程：[实习生职位](https://mthreads.zhiye.com/intern/jobs)
 
 阿里：  https://campus-talent.alibaba.com/campus/position/199908340002?deptCodes=
@@ -17,11 +21,20 @@
 寒武纪：
 https://app.mokahr.com/campus-recruitment/cambricon/44201#/jobs?zhineng%5B0%5D=18576
 
-
+希音
+https://app.mokahr.com/recommendation-recruitment/shein/2934?recommendCode=NTAdGQF#/job/c8914636-20f9-4dbc-ab4a-b1e3d1cbb349
 
 
 [AI实习生（数据运营/工作流） - 加入影石创新科技股份有限公司](https://arashivision.jobs.feishu.cn/campus/position/7667837696232311059/detail?share_token=MzsxNzUzMzM5Nzk0NjU1OzczOTUxNDI1NDUzMTM0ODMwNTg7MDsxLzI)
 AI实习生（数据运营/工作流）
+
+
+南芯内推！  
+内推码：IVV8JK，有效期至9月28号 [【秋招】南芯 校招&社招内推，欢迎佬友投递！ - 非我莫属 - LINUX DO](https://linux.do/t/topic/2854790)
+
+
+
+
 
 深圳
 
