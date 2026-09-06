@@ -1,4 +1,22 @@
+
+[DeepSeek Harness（dsh）从入门到精通](https://liangdabiao.github.io/DSH-DeepSeek-Harness/index.html)
+
+[前言：什么是 agent - 笨办法学 Agent · 亲手打造一个 harness](https://leihb.github.io/learn-agent-the-hard-way/)
+
+[AI 智能体实战速成指南：从零到企业级落地 | ai-agents-from-zero](https://didilili.github.io/ai-agents-from-zero/#/)
+
+[AI 工程从零开始](https://liangdabiao.github.io/ai-engineering-from-scratch/site/index.html#contents)
+
+学习pi：[Pi Agent 双轨教程 · 实战上手 + 源码学习](https://dg-ai-notes.pages.dev/)
+
+
+https://liwenzhou.com/courses/ai-agent/
+
 [ai-boost/awesome-harness-engineering | zdoc.app](https://www.zdoc.app/zh/ai-boost/awesome-harness-engineering)
+
+[worenbudaoni/rag-study-helper: 一个学习检索增强生成的全流程助手](https://github.com/worenbudaoni/rag-study-helper) rag学习，Linux佬友
+
+[深入理解 AI Agent - AI Agents in Depth](https://bojieli.github.io/ai-agent-book/)
 
 [佬们，想换工作了，怎么学习 AI Agent 开发呀 - 开发调优 - LINUX DO](https://linux.do/t/topic/2698670)
 
@@ -11,6 +29,12 @@
 [⁠⁠⁠⁠​​​‍​​​﻿​​﻿​​‍​⁠​⁠﻿​​​​‍﻿​‍​​‬​﻿​​‍‍‬​​​​‍​​AI大模型资源合集 - 飞书云文档](https://my.feishu.cn/wiki/SNrYwgGoUioYJlkIUdEcn4nHnsc)
 
 [LangGraph agent 记忆能力](https://www.yuque.com/xiaxiaoshuai/xsc8y4/xu2ex7eadroemu79)
+
+学习claude：[Model Context Protocol (MCP) — claude.nagdy.me](https://claude.nagdy.me/learn/mcp/)
+[Learn Claude Code](https://learn.shareai.run/zh/s01/)
+
+
+
 
 零基础的先看菜鸟教程：[https://www.runoob.com/ai-agent/ai-agent-tutorial.html](https://www.runoob.com/ai-agent/ai-agent-tutorial.html)  
 然后再学hello-agent:GitHub - datawhalechina/hello-agents: 《从零开始构建智能体》——从零开始的智能体原理与实践教程 · GitHub  
