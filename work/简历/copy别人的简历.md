@@ -1,6 +1,11 @@
 
 
 
+[27届秋招，求佬友们指点下简历 - 非我莫属 - LINUX DO](https://linux.do/t/topic/2876159)
+![[Pasted image 20260908221227.png]]
+
+
+---
 https://linux.do/t/topic/2870141
 
 

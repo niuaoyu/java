@@ -9,6 +9,8 @@
 
 学习pi：[Pi Agent 双轨教程 · 实战上手 + 源码学习](https://dg-ai-notes.pages.dev/)
 
+[bcefghj/learn-nanobot: 面向小白的 HKUDS/nanobot 面试学习指南 | 17章深度教程 | 134道八股文 | 哆啦A梦漫画图解 | STAR面试法 | 简历模板](https://github.com/bcefghj/learn-nanobot/tree/main)
+
 
 https://liwenzhou.com/courses/ai-agent/
 
@@ -33,7 +35,7 @@ https://liwenzhou.com/courses/ai-agent/
 学习claude：[Model Context Protocol (MCP) — claude.nagdy.me](https://claude.nagdy.me/learn/mcp/)
 [Learn Claude Code](https://learn.shareai.run/zh/s01/)
 
-
+https://bojieli.github.io/ai-agent-book/  有深度
 
 
 零基础的先看菜鸟教程：[https://www.runoob.com/ai-agent/ai-agent-tutorial.html](https://www.runoob.com/ai-agent/ai-agent-tutorial.html)  
