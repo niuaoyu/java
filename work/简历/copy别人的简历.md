@@ -1,4 +1,20 @@
 
+https://github.com/longsizhuo/BossZhiPin_Job_Search
+
+https://github.com/Ocyss/boss-helper
+
+
+
+
+[非玻璃心，求简历锐评 - 非我莫属 - LINUX DO](https://linux.do/t/topic/2870573)
+
+![[Pasted image 20260909142523.png]]
+
+**[27届秋招 java 简历修改求建议 - 深海幽域 - LINUX DO](https://linux.do/t/topic/2863678)**
+
+![[Pasted image 20260909140858.png]]
+
+
 
 
 [27届秋招，求佬友们指点下简历 - 非我莫属 - LINUX DO](https://linux.do/t/topic/2876159)
