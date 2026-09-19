@@ -101,3 +101,38 @@ Git tracks changes of files.
 dev分支修改的内容
 ```
 重新add commit即可
+
+
+
+这是个常见的问题： user2 从 `main在B的时候` 拉的分支，但 main 已经前进到 `C2`，user2 的代码是基于旧版本的。
+```text
+时间线：
+main:    A → B
+user1:   A → B → C1 → C2       (改了文件 X)
+user2:   A → B → D1 → D2       (也改了文件 X)
+
+user1 先合并：main = A → B → C1 → C2
+user2 再合并：main 和 user2 都改了 X → 冲突！
+```
+
+方法1：合并前先同步 main（推荐）
+user2 在合并前，先做这一步：
+```bash
+
+# 1. 确保自己在 user2 分支
+git switch feature/user2
+# 2. 拉取最新的 main（关键！）
+git fetch origin
+# 3. 把 main 的最新代码合并到自己的分支
+git merge origin/main
+# 如果有冲突，在这里解决（而不是在 main 上解决）
+# 4. 解决冲突后提交
+git add .
+git commit -m "merge: 同步最新 main"
+# 5. 现在 user2 分支已经包含了 main 的最新代码
+# 6. 切换到 main 合并
+git switch main
+git merge feature/user2  # 此时不会冲突，因为已经提前解决了
+
+```
+**核心思想：把冲突解决在"自己的分支上"，而不是"main 分支上"。**

@@ -1,5 +1,10 @@
+[docker-notes/docs/ch4/ch4_2.md at main · datawhalechina/docker-notes](https://github.com/datawhalechina/docker-notes/blob/main/docs/ch4/ch4_2.md) Dockerfile命令
+
+
 https://docker-practice.github.io/
 https://yeasy.gitbook.io/docker_practice 有点细了，后续熟练用后再学
+
+
 
 虚拟机像是每个应用都住在一栋独立的房子里（有自己的地基、水电系统），而容器像是大家住在同一栋公寓楼里的不同房间（共享地基和水电系统，但各自独立）。
 

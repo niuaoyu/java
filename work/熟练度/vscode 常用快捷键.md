@@ -6,14 +6,17 @@
 2. 终端
 	1. 打开，隐藏终端：[ ctrl +`]
 	2. 新建一个终端：[Ctrl + Shift +` ]
-	3. 
+	3. **在终端之间切换**|`Ctrl + PageUp` / `Ctrl + PageDown`|
+	4. 
 3. 快速定位当前 Python 文件的内容
 	1. **快捷键**：`Ctrl + Shift + O`  ,输入要找的东西，快速定位
 4. 导航页文件快速切换：ctrl+tab
 5. 折叠
 	1. 折叠所有的class： ctrl+k+0，展开所有的class：Ctrl+K+J
 	2. 折叠当前的class：ctrl+shift+[
-6. 
+6. 修改快捷键：ctrl + k ctrl + s
+
+
 
 
 
