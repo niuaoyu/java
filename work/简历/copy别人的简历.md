@@ -3,7 +3,8 @@ https://github.com/longsizhuo/BossZhiPin_Job_Search
 
 https://github.com/Ocyss/boss-helper
 
-
+https://linux.do/t/topic/2906897
+[26届毕业生就业求指导 - 非我莫属 - LINUX DO](https://linux.do/t/topic/2907648)
 
 
 [非玻璃心，求简历锐评 - 非我莫属 - LINUX DO](https://linux.do/t/topic/2870573)
