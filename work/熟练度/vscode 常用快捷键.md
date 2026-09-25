@@ -15,6 +15,7 @@
 	1. 折叠所有的class： ctrl+k+0，展开所有的class：Ctrl+K+J
 	2. 折叠当前的class：ctrl+shift+[
 6. 修改快捷键：ctrl + k ctrl + s
+7. 用快捷键打开“转到行”：Ctrl + G
 
 
 
