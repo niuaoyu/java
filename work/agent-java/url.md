@@ -1,3 +1,5 @@
+[goehou/learn-agent: 20 章中文 AI Agent 架构实战教程，配套可运行 TypeScript 代码，覆盖工具、权限、记忆、多 Agent、Worktree 与 MCP。](https://github.com/goehou/learn-agent)
+
 
 [DeepSeek Harness（dsh）从入门到精通](https://liangdabiao.github.io/DSH-DeepSeek-Harness/index.html)
 

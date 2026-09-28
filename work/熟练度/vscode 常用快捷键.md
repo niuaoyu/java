@@ -16,6 +16,7 @@
 	2. 折叠当前的class：ctrl+shift+[
 6. 修改快捷键：ctrl + k ctrl + s
 7. 用快捷键打开“转到行”：Ctrl + G
+8. 全屏预览/切回源码：Ctrl + Shift + V（这个键只能“打开预览”，切不回源码）
 
 
 
