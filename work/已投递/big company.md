@@ -1,6 +1,10 @@
+讯兔科技（ai+金融）：[讯兔科技](https://www.rabyte.cn/j_detail.php?id=247)
+
 
 
 [DeepSeek招聘](https://app.mokahr.com/social-recruitment/high-flyer/140576#/job/8d40c764-d2b2-49b1-826c-e3f2adb75c01)
+
+
 
 
 摩尔线程：[实习生职位](https://mthreads.zhiye.com/intern/jobs)
